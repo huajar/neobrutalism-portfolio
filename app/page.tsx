@@ -8,7 +8,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Portfolio() {
   return (
-    <MaxWidthWrapper className="my-20 space-y-32">
+    <MaxWidthWrapper className="mb-14 space-y-32">
       <Hero />
       <Skills />
       <Projects />
