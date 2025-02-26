@@ -17,6 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
+import { ThemeSwitcher } from "./theme/ThemeSwitcher";
 
 const array = [
   {
@@ -56,25 +57,22 @@ export const Header = () => {
           alt="Abstract_logo"
           width={50}
           height={50}
-          className="mb-7 max-sm:hidden"
+          className="mb-7"
         />
         <p className="max-sm:text-xs font-medium">
           Open to work, let's connect!
         </p>
-        <ArrowRight className="max-sm:hidden" />
+        <ArrowRight />
         <Image
           src="/Abstract.svg"
           alt="Abstract_logo"
           width={30}
           height={30}
-          className="mt-7 max-sm:hidden"
+          className="mt-7"
         />
       </div>
       <div className="w-full h-16 rounded-lg border-border border-2 flex items-center justify-between pl-1.5 overflow-hidden bg-bw">
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => router.push("/")}
-        >
+        <div className="flex items-center gap-6">
           <Image
             src="/hero-icon.svg"
             alt="logo"
@@ -82,28 +80,29 @@ export const Header = () => {
             height={50}
             className="h-12 w-12"
           />
-          <p className="max-sm:text-base font-bold">RODRIGO HUAJAMAITA</p>
+          <div className="flex gap-10 items-center h-full max-xl:hidden">
+            {array.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className={cn(
+                  "flex items-center w-fit justify-center border-border max-sm:text-xs font-medium hover:underline"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex items-center h-full max-xl:hidden">
-          {array.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className={cn(
-                "border-l-2 h-full flex items-center justify-center px-5 transition-all hover:bg-blue-100 border-border max-sm:text-xs font-medium",
-                pathname === item.href ? "bg-blue-300 hover:bg-blue-300" : ""
-              )}
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="hidden xl:flex gap-6 items-center mx-3">
+          <ThemeSwitcher />
         </div>
         <div className="xl:hidden h-full">
           <Sheet>
             <SheetTrigger asChild>
               <Button
                 variant="noShadow"
-                className="h-full border-l-2 border-r-0 border-t-0 border-b-0 rounded-none"
+                className="h-full border-l-2 border-r-0 border-t-0 border-b-0 rounded-none bg-blue-300"
               >
                 <Menu />
               </Button>
@@ -111,11 +110,8 @@ export const Header = () => {
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
-                <SheetDescription>
-                  Retrouvez ici tous les liens de navigation
-                </SheetDescription>
               </SheetHeader>
-              <div className="grid mt-5 border-2 rounded-lg overflow-hidden">
+              <div className="grid mt-5 border-2 rounded-lg overflow-hidden border-border">
                 {array.map((item, index) => (
                   <SheetClose asChild key={index} className="">
                     <Link
@@ -138,9 +134,7 @@ export const Header = () => {
                 ))}
               </div>
               <SheetFooter className="mt-5">
-                <SheetClose asChild>
-                  <Button>Fermer le menu</Button>
-                </SheetClose>
+                <ThemeSwitcher className="w-full"/>
               </SheetFooter>
             </SheetContent>
           </Sheet>
