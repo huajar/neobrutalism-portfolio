@@ -20,24 +20,20 @@ import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 
 const array = [
   {
-    name: "Accueil",
+    name: "Home",
     href: "/",
   },
   {
-    name: "À propos de nous",
+    name: "About",
     href: "/about",
   },
   {
-    name: "L'établissement",
-    href: "/establishment",
+    name: "Projects",
+    href: "/projects",
   },
   {
-    name: "Admissions",
-    href: "/admissions",
-  },
-  {
-    name: "Vie étudiante",
-    href: "/student-life",
+    name: "Experience",
+    href: "/experience",
   },
   {
     name: "Contact",
@@ -50,10 +46,10 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-10 z-50 bg-background">
+    <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-11 z-50">
       <div
         onClick={() => router.push("/contact")}
-        className=" w-full border-2 rounded-lg h-10 bg-blue-300 flex justify-center items-center gap-3 overflow-hidden p-0 cursor-pointer"
+        className=" w-full h-10 bg-blue-300 overflow-hidden p-0 cursor-pointer text-mtext border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap rounded-base text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
       >
         <Image
           src="/Abstract.svg"
@@ -62,7 +58,7 @@ export const Header = () => {
           height={50}
           className="mb-7 max-sm:hidden"
         />
-        <p className="max-sm:text-xs">
+        <p className="max-sm:text-xs font-medium">
           Open to work, let's connect!
         </p>
         <ArrowRight className="max-sm:hidden" />
@@ -74,7 +70,7 @@ export const Header = () => {
           className="mt-7 max-sm:hidden"
         />
       </div>
-      <div className="w-full h-16 rounded-lg border-2 flex items-center justify-between pl-3 overflow-hidden bg-bw">
+      <div className="w-full h-16 rounded-lg border-border border-2 flex items-center justify-between pl-1.5 overflow-hidden bg-bw">
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => router.push("/")}
@@ -86,7 +82,7 @@ export const Header = () => {
             height={50}
             className="h-12 w-12"
           />
-          <p className="max-sm:text-xs font-bold">RODRIGO HUAJAMAITA</p>
+          <p className="max-sm:text-base font-bold">RODRIGO HUAJAMAITA</p>
         </div>
         <div className="flex items-center h-full max-xl:hidden">
           {array.map((item, index) => (
@@ -94,7 +90,7 @@ export const Header = () => {
               key={index}
               href={item.href}
               className={cn(
-                "border-l-2 h-full flex items-center justify-center px-5 transition-all hover:bg-blue-100",
+                "border-l-2 h-full flex items-center justify-center px-5 transition-all hover:bg-blue-100 border-border max-sm:text-xs font-medium",
                 pathname === item.href ? "bg-blue-300 hover:bg-blue-300" : ""
               )}
             >
