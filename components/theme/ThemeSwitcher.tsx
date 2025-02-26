@@ -7,13 +7,13 @@ import * as React from "react"
 
 import { Button } from "@/components/ui/button"
 
-export function ThemeSwitcher() {
+export function ThemeSwitcher({className}: {className?: string}) {
   const { setTheme, theme } = useTheme()
 
   return (
     <>
       <Button
-        className="h-11 w-11"
+        className={`h-11 w-11 ${className}`}
         variant='neutral'
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
