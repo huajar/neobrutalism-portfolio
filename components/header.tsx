@@ -36,10 +36,6 @@ const array = [
     name: "Experience",
     href: "/experience",
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
 ];
 
 export const Header = () => {
@@ -49,7 +45,7 @@ export const Header = () => {
   return (
     <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-11 z-50">
       <div
-        onClick={() => router.push("/contact")}
+        
         className=" w-full h-10 bg-blue-300 overflow-hidden p-0 cursor-pointer text-mtext border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap rounded-base text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
       >
         <Image
@@ -94,8 +90,12 @@ export const Header = () => {
             ))}
           </div>
         </div>
-        <div className="hidden xl:flex gap-6 items-center mx-3">
-          <ThemeSwitcher />
+        <div className="flex gap-4 items-center">
+          <Button onClick={() => router.push("/contact")} className="bg-blue-300">Hire me</Button>
+          <Button variant="neutral">Resume</Button>
+          <div className="hidden xl:flex items-center mr-3">
+            <ThemeSwitcher />
+          </div>
         </div>
         <div className="xl:hidden h-full">
           <Sheet>
@@ -134,7 +134,7 @@ export const Header = () => {
                 ))}
               </div>
               <SheetFooter className="mt-5">
-                <ThemeSwitcher className="w-full"/>
+                <ThemeSwitcher className="w-full" />
               </SheetFooter>
             </SheetContent>
           </Sheet>

@@ -13,7 +13,7 @@ export function ThemeSwitcher({className}: {className?: string}) {
   return (
     <>
       <Button
-        className={`h-11 w-11 ${className}`}
+        className={`h-10 w-10 ${className}`}
         variant='neutral'
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
