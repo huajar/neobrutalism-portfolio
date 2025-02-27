@@ -35,8 +35,8 @@ export function Hero() {
           {/* Text content - adjusted spacing for both layouts */}
           <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left mt-8 md:mt-0">
             <div className="space-y-4">
-              <Badge className="text-base font-medium justify-center items-center">
-                Rodrigo Hujamaita
+              <Badge className="text-base font-medium justify-center items-center py-0 !pb-1">
+                Rodrigo Huajamaita
               </Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 Full-Stack
@@ -78,7 +78,7 @@ export function Hero() {
               </Link>
               <Link href="mailto:rhuajamaita@gmail.com">
                 <Button size="icon">
-                  <Mail className="h-5 w-5" />
+                  <Mail width={24} height={24} />
                   <span className="sr-only">Email</span>
                 </Button>
               </Link>
