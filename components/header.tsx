@@ -5,7 +5,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -56,7 +55,7 @@ export const Header = () => {
           className="mb-7"
         />
         <p className="max-sm:text-xs font-medium">
-          Open to work, let's connect!
+          Open to work, let&apos;s connect!
         </p>
         <ArrowRight />
         <Image
