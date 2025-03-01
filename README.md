@@ -6,7 +6,7 @@
   <h3 align="center">Neobrutalism Portfolio</h3>
 
   <p align="center">
-    Neobrutalism style portfolio
+    Personal Portfolio with neo-brutalist design
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     &middot;
@@ -20,15 +20,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This portfolio is built with functionality and style in mind, embracing the Neobrutalist aesthetic while ensuring a seamless user experience. It serves as a personal showcase for projects, skills, and achievements, making it easy to navigate while maintaining a unique visual identity.
+This portfolio is built in Neobrutalism style and aesthetics. It serves as a personal showcase of projects, skills and achievements.
 
 Why Neobrutalism?
-* **Minimal yet bold**: A raw and direct approach to web design.
-* **High contrast & clarity**: Focus on readability and structure.
-* **Modern yet timeless**: A blend of digital brutalism and contemporary UX principles.
-
-This portfolio is not just a website—it's a statement. Built for those who dare to stand out. 🚀
-
+* **Unrefined and striking**: A design approach that prioritizes simplicity and directness.
+* **Strong contrast**: A well-defined structure that enhances clarity and readability.
+* **Modern yet timeless**: A blend of Brutalist style with user-centric design principles.
 
 
 
@@ -65,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 1. Clone the repo
 
    ```sh
-   git clone https://github.dev/huajar/neobrutalism-portfolio
+   git clone https://github.com/huajar/neobrutalism-portfolio.git
    ```
 2. Install NPM packages
 
@@ -93,7 +90,6 @@ To get a local copy up and running follow these simple example steps.
     - [ ] Spanish
     - [x] English
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 
 
@@ -116,7 +112,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Rodrigo Huajamaita - [@rhuaja](www.linkedin.com/in/rhuaja) - rhuajamaita@gmail.com
+Rodrigo Huajamaita - [@rhuaja](www.linkedin.com/in/rhuaja)
 
 Project Link: [https://huajar.dev](https://huajar.dev)
 
@@ -125,8 +121,6 @@ Project Link: [https://huajar.dev](https://huajar.dev)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Neobrutalism components](https://www.neobrutalism.dev/)
 
