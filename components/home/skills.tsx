@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Code2,
@@ -11,6 +10,58 @@ import {
   Palette,
 } from "lucide-react";
 import { Button } from "../ui/button";
+
+//   const skills = [
+//     {
+//       category: "Frontend",
+//       icon: <Code2 className="h-5 w-5" />,
+//       technologies: ["React", "Next.js", "Vue.js", "Angular", "HTML5", "CSS3"],
+//       color: "bg-blue-500",
+//     },
+//     {
+//       category: "Backend",
+//       icon: <Server className="h-5 w-5" />,
+//       technologies: ["Node.js", "Express", "Django", "Flask", "Spring Boot"],
+//       color: "bg-green-500",
+//     },
+//     {
+//       category: "Database",
+//       icon: <Database className="h-5 w-5" />,
+//       technologies: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"],
+//       color: "bg-yellow-500",
+//     },
+//     {
+//       category: "DevOps",
+//       icon: <GitBranch className="h-5 w-5" />,
+//       technologies: ["Docker", "Kubernetes", "AWS", "CI/CD", "Git"],
+//       color: "bg-purple-500",
+//     },
+//     {
+//       category: "Mobile",
+//       icon: <Smartphone className="h-5 w-5" />,
+//       technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
+//       color: "bg-pink-500",
+//     },
+//     {
+//       category: "Languages",
+//       icon: <Braces className="h-5 w-5" />,
+//       technologies: ["JavaScript", "TypeScript", "Python", "Java", "C#", "Go"],
+//       color: "bg-red-500",
+//     },
+//     {
+//       category: "UI/UX",
+//       icon: <Palette className="h-5 w-5" />,
+//       technologies: ["Figma", "Adobe XD", "Sketch", "Tailwind CSS", "SASS"],
+//       color: "bg-indigo-500",
+//     },
+//     {
+//       category: "Architecture",
+//       icon: <Layers className="h-5 w-5" />,
+//       technologies: ["Microservices", "REST API", "GraphQL", "WebSockets"],
+//       color: "bg-teal-500",
+//     },
+//   ]
+
 
 export default function Skills() {
   const skills = [
@@ -85,7 +136,7 @@ export default function Skills() {
                 <div className="flex items-center gap-3 mb-4">
                   <Button className={`p-2 ${skill.color}`}>
                     {skill.icon}
-                  <h3 className="font-semibold text-lg">
+                  <h3 className="font-semibold text-lg dark:text-white">
                     {skill.category}
                   </h3>
                   </Button>
