@@ -6,7 +6,7 @@ interface ProvidersProps {
 
 export const Providers = ({ children }: ProvidersProps) => {
   return (
-    <div className="size-full py-3">
+    <div className="size-full py-2">
       <Header />
       {children}
     </div>
