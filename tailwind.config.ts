@@ -7,7 +7,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+theme: {
   extend: {
     colors: {
       main: 'var(--main)',
@@ -24,19 +24,19 @@ export default {
       secondaryBlack: '#212121', 
     },
     borderRadius: {
-      base: '4px'
+      base: '0px'
     },
     boxShadow: {
       shadow: 'var(--shadow)'
     },
     translate: {
-      boxShadowX: '-4px',
-      boxShadowY: '4px',
-      reverseBoxShadowX: '4px',
-      reverseBoxShadowY: '-4px',
+      boxShadowX: '6px',
+      boxShadowY: '6px',
+      reverseBoxShadowX: '-6px',
+      reverseBoxShadowY: '-6px',
     },
     fontWeight: {
-      base: '500',
+      base: '600',
       heading: '900',
     },
   },
