@@ -8,18 +8,30 @@ import { Badge } from "../ui/badge";
 export function Hero() {
   return (
     <section className="py-12 md:py-24" id="about">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 lg:pr-0 md:px-6">
         {/* Changed to row on md breakpoint, with better spacing */}
-        <div className="flex flex-col lg:flex-row items-center justify-between md:gap-10 lg:gap-28">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-7 md:gap-10 lg:gap-32">
           {/* Portrait container */}
+          <div className="flex items-center justify-center">
+            <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rotate-3 bg-main border-8 border-black [box-shadow:12px_12px_0px_0px_#000]">
+              <Image
+                src="/image-preview.svg"
+                width={350}
+                height={350}
+                alt="Profile Image"
+                className="absolute top-4 left-4 w-full h-full object-cover border-4 border-black -rotate-6"
+              />
+              <div className="absolute -bottom-6 -right-6 bg-white dark:bg-[#000] border-4 border-black p-2 rotate-12 [box-shadow:4px_4px_0px_0px_#000]">
+                <span className="text-lg font-bold">👋 Hello!</span>
+              </div>
+            </div>
+            </div>
+          {/*
           <div className="relative w-[270px] h-[270px] sm:w-[400px] sm:h-[400px] shrink-0">
-            {/* Frame lines - extended beyond corners */}
-            <div className="absolute top-11 left-[-1rem] right-[-1rem] h-[1px] bg-gradient-to-r from-transparent via-black to-transparent" />
-            <div className="absolute bottom-11 left-[-1rem] right-[-1rem] h-[1px] bg-gradient-to-r from-transparent via-black to-transparent" />
-            <div className="absolute left-11 top-[-1rem] bottom-[-1rem] w-[1px] bg-gradient-to-t from-transparent via-black to-transparent" />
-            <div className="absolute right-11 top-[-1rem] bottom-[-1rem] w-[1px] bg-gradient-to-t from-transparent via-black to-transparent" />
-
-            {/* Image */}
+            <div className="absolute top-11 left-[-1rem] right-[-1rem] h-[5px] bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
+            <div className="absolute bottom-11 left-[-1rem] right-[-1rem] h-[5px] bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
+            <div className="absolute left-11 top-[-1rem] bottom-[-1rem] w-[5px] bg-gradient-to-t from-transparent via-blue-300 to-transparent" />
+            <div className="absolute right-11 top-[-1rem] bottom-[-1rem] w-[5px] bg-gradient-to-t from-transparent via-blue-300 to-transparent" />
             <div className="absolute inset-12 rounded-lg">
               <Image
                 src="/image-preview.svg"
@@ -30,15 +42,16 @@ export function Hero() {
                 sizes="(max-width: 640px) 300px, (max-width: 768px) 400px, 400px"
               />
             </div>
-          </div>
+          </div> 
+          */}
 
           {/* Text content - adjusted spacing for both layouts */}
-          <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left mt-8 md:mt-0">
+          <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left md:mt-0">
             <div className="space-y-4">
-              <Badge className="text-base font-medium justify-center items-center py-0 !pb-1">
+              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 bg-[#000]  dark:bg-bw text-white">
                 Rodrigo Huajamaita
               </Badge>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
                 Full-Stack
                 <br />
                 Developer
@@ -77,8 +90,8 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="mailto:rhuajamaita@gmail.com">
-                <Button size="icon">
-                  <Mail width={24} height={24} />
+                <Button className="[&_svg]:size-auto" size="icon">
+                  <Mail width={64} height={24}/>
                   <span className="sr-only">Email</span>
                 </Button>
               </Link>
