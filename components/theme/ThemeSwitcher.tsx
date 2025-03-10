@@ -17,7 +17,7 @@ export function ThemeSwitcher({className}: {className?: string}) {
         variant='reverse'
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
-        <Sun className="h-6 w-6 m500:h-4 m500:w-4 hidden dark:inline stroke-darkText" />
+        <Sun className="h-6 w-6 m500:h-4 m500:w-4 hidden dark:inline stroke-text" />
         <Moon className="h-6 w-6 m500:h-4 m500:w-4 inline dark:hidden stroke-text" />
         <span className="sr-only">Toggle theme</span>
       </Button>

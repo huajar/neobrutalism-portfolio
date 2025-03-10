@@ -137,7 +137,7 @@ export const Header = () => {
                 ))}
               </div>
               <SheetFooter className="mt-5 gap-4 md:flex md:flex-col">
-                <ThemeSwitcher className="w-full" />
+                <ThemeSwitcher className="w-full bg-[#FD9745]" />
               </SheetFooter>
             </SheetContent>
           </Sheet>
