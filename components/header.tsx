@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 import { ThemeSwitcher } from "./theme/ThemeSwitcher";
 import DynamicSVG from "./DynamicSVG";
@@ -40,7 +40,6 @@ const array = [
 
 export const Header = () => {
   const pathname = usePathname();
-  const router = useRouter();
 
   return (
     <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50">

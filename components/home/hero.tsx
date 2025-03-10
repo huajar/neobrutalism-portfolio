@@ -20,6 +20,8 @@ export function Hero() {
                 height={350}
                 alt="Profile Image"
                 className="absolute top-4 left-4 w-full h-full object-cover border-4 border-black -rotate-6"
+                loading="eager"
+                priority
               />
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-[#000] border-4 border-black p-2 rotate-12 [box-shadow:4px_4px_0px_0px_#000]">
                 <span className="text-lg font-bold">👋 Hello!</span>

@@ -13,6 +13,7 @@ export default function FeaturedProjects() {
         "An web application that allows managers to track members status, territories, and placements for door-to-door sales teams.",
       image: "/colporteur-maps.webp",
       technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
+      deployLink: "",
       demoLink: "https://example.com/demo",
       repoLink: "",
       completedDate: "In development",
@@ -23,31 +24,68 @@ export default function FeaturedProjects() {
         "Is a platform that connects Adventist freelancers with clients who need their services.",
       image: "/AOTM.webp",
       technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-      demoLink: "https://adventistonthemap.com/",
+      deployLink: "https://adventistonthemap.com/",
+      demoLink: "",
       repoLink: "",
       completedDate: "August 2024",
+    },
+    {
+      title: "Ediciones Lucentia",
+      description:
+      "A landing page for a editorial that sells books, e-books and audiobooks.",
+      image: "/ediciones-lucentia.webp",
+      technologies: ["WordPress", "Elementor"],
+      deployLink: "https://edicioneslucentia.com/",
+      demoLink: "",
+      repoLink: "",
+      completedDate: "October 2024",
+    },
+    {
+      title: "Profeteia",
+      description:
+        "A e-commerce and personal blog web for a client who sells virtual products.",
+      image: "/Profeteia.webp",
+      technologies: ["WordPress", "WooCommerce", "Elementor"],
+      deployLink: "https://profeteia.com/",
+      demoLink: "",
+      repoLink: "",
+      completedDate: "Junary 2024",
     },
     {
       title: "The Friends Language Club",
       description:
         "A platform that connects language learners with native speakers for practice and cultural exchange.",
       image: "/friendslanguage.webp",
-      technologies: ["Next.js", "MongoDB", "Prisma", "Tailwind CSS", "TypeScript"],
+      technologies: [
+        "Next.js",
+        "MongoDB",
+        "Prisma",
+        "Tailwind CSS",
+        "TypeScript",
+      ],
+      deployLink: "",
       demoLink: "https://friendslanguage.club/",
       repoLink: "",
-      completedDate: "March 2024",
+      completedDate: "December 2023",
     },
     {
-      title: "Fitness Tracking Dashboard",
+      title: "Alkitab",
       description:
-        "A comprehensive fitness tracking application with workout plans, progress visualization, and nutrition monitoring.",
-      image: "/image-preview.svg",
-      technologies: ["Vue.js", "Express", "MongoDB", "Chart.js", "Socket.io"],
-      demoLink: "https://example.com/fitness",
-      repoLink: "https://github.com/yourusername/fitness-tracker",
-      completedDate: "November 2023",
+        "Web App to connect kyrkystanies to the christianism, i do featuareas and mantenimence, developed by Hope Media Asia Central",
+      image: "/friendslanguage.webp",
+      technologies: [
+        "Django",
+        "PostgreSQL",
+        "HTML5",
+        "CSS",
+      ],
+      deployLink: "",
+      demoLink: "https://friendslanguage.club/",
+      repoLink: "",
+      completedDate: "Mantenimance?",
     },
   ];
+
 
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
@@ -61,8 +99,8 @@ export default function FeaturedProjects() {
               My Projects
             </h2>
             <p className="md:text-lg max-w-[600px]">
-              Check out some of my recent work. Each project is a unique blend
-              of design and functionality.
+              Check out some of my recent work. I am involved with development
+              and maintenance for clients and organizations.
             </p>
           </div>
         </div>
@@ -81,7 +119,7 @@ export default function FeaturedProjects() {
                 }}
                 width={500}
                 height={300}
-                className="w-full h-full object-fit object-center"
+                className="w-full h-full object-fit object-center border-b-[1px]"
               />
               <CardContent className="p-4 sm:p-6 flex-grow">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-3">
@@ -109,20 +147,38 @@ export default function FeaturedProjects() {
                 </div>
               </CardContent>
               <CardFooter className="p-4 sm:p-6 pt-0 flex flex-col sm:flex-row gap-3">
-                <Button
-                  size="sm"
-                  className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
-                  asChild
-                >
-                  <Link
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                {project.deployLink && (
+                  <Button
+                    size="sm"
+                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
+                    asChild
                   >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Link>
-                </Button>
+                    <Link
+                      href={project.deployLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Deployed Link
+                    </Link>
+                  </Button>
+                )}
+                {project.demoLink && (
+                  <Button
+                    size="sm"
+                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
+                    asChild
+                  >
+                    <Link
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Live Demo
+                    </Link>
+                  </Button>
+                )}
                 {project.repoLink && (
                   <Button
                     size="sm"
