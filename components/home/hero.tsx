@@ -10,7 +10,7 @@ export function Hero() {
     <section className="py-12 md:py-24" id="about">
       <div className="container mx-auto px-4 lg:pr-0 md:px-6">
         {/* Changed to row on md breakpoint, with better spacing */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-7 md:gap-10 lg:gap-32">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-10 lg:gap-32">
           {/* Portrait container */}
           <div className="flex items-center justify-center">
             <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rotate-3 bg-main border-8 border-black [box-shadow:12px_12px_0px_0px_#000]">
