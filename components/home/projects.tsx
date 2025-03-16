@@ -8,6 +8,17 @@ import Image from "next/image";
 export default function FeaturedProjects() {
   const projects = [
     {
+      title: "Alkitab",
+      description:
+        "Web App to connect kyrkystanies to the christianism, i do featuareas and mantenimence, developed by Hope Media Asia Central",
+      image: "/AlKitab.webp",
+      technologies: ["Django", "PostgreSQL", "HTML5", "CSS"],
+      deployLink: "",
+      demoLink: "https://friendslanguage.club/",
+      repoLink: "",
+      completedDate: "",
+    },
+    {
       title: "ColporMaps",
       description:
         "An web application that allows managers to track members status, territories, and placements for door-to-door sales teams.",
@@ -19,6 +30,17 @@ export default function FeaturedProjects() {
       completedDate: "In development",
     },
     {
+      title: "Ediciones Lucentia",
+      description:
+        "A landing page for a editorial that sells books, e-books and audiobooks.",
+      image: "/ediciones-lucentia.webp",
+      technologies: ["WordPress", "Elementor"],
+      deployLink: "https://edicioneslucentia.com/",
+      demoLink: "",
+      repoLink: "",
+      completedDate: "October 2024",
+    },
+    {
       title: "Adventist On The Map",
       description:
         "Is a platform that connects Adventist freelancers with clients who need their services.",
@@ -28,17 +50,6 @@ export default function FeaturedProjects() {
       demoLink: "",
       repoLink: "",
       completedDate: "August 2024",
-    },
-    {
-      title: "Ediciones Lucentia",
-      description:
-      "A landing page for a editorial that sells books, e-books and audiobooks.",
-      image: "/ediciones-lucentia.webp",
-      technologies: ["WordPress", "Elementor"],
-      deployLink: "https://edicioneslucentia.com/",
-      demoLink: "",
-      repoLink: "",
-      completedDate: "October 2024",
     },
     {
       title: "Profeteia",
@@ -68,24 +79,7 @@ export default function FeaturedProjects() {
       repoLink: "",
       completedDate: "December 2023",
     },
-    {
-      title: "Alkitab",
-      description:
-        "Web App to connect kyrkystanies to the christianism, i do featuareas and mantenimence, developed by Hope Media Asia Central",
-      image: "/friendslanguage.webp",
-      technologies: [
-        "Django",
-        "PostgreSQL",
-        "HTML5",
-        "CSS",
-      ],
-      deployLink: "",
-      demoLink: "https://friendslanguage.club/",
-      repoLink: "",
-      completedDate: "Mantenimance?",
-    },
   ];
-
 
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
@@ -93,14 +87,14 @@ export default function FeaturedProjects() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <Badge className="text-base font-medium justify-center items-center py-0 !pb-1 bg-black text-white dark:bg-bw">
-              Worked on
+              involved in
             </Badge>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-              My Projects
+            My Projects
             </h2>
             <p className="md:text-lg max-w-[600px]">
               Check out some of my recent work. I am involved with development
-              and maintenance for clients and organizations.
+              and maintenance proyects for clients and organizations.
             </p>
           </div>
         </div>
@@ -126,10 +120,12 @@ export default function FeaturedProjects() {
                   <h3 className="font-semibold text-xl sm:text-2xl mb-1 sm:mb-0 dark:text-white">
                     {project.title}
                   </h3>
-                  <div className="flex items-center text-sm dark:text-gray-300">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {project.completedDate}
-                  </div>
+                  {project.completedDate && (
+                    <div className="flex items-center text-sm dark:text-gray-300">
+                      <Calendar className="h-4 w-4 mr-1" />
+                      {project.completedDate}
+                    </div>
+                  )}
                 </div>
                 <p className="text-sm sm:text-base mb-4 dark:text-gray-400">
                   {project.description}
