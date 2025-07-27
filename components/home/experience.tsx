@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/card";
 
 export default function Experience() {
-  const [activeTab, setActiveTab] = useState("all");
 
   const experiences = [
     {
@@ -84,11 +83,6 @@ export default function Experience() {
     },
   ];
 
-  const filteredExperiences =
-    activeTab === "all"
-      ? experiences
-      : experiences.filter((exp) => exp.type === activeTab);
-
   return (
     <section className="py-16">
       <div className="container px-4 md:px-6">
@@ -122,7 +116,7 @@ export default function Experience() {
           </div>
         </div>
         <div className="mt-0 space-y-8">
-          {filteredExperiences.map((exp, index) => (
+          {experiences.map((exp) => (
             <div key={exp.id}>
               <Card>
                 <CardHeader className="pb-2">
