@@ -9,8 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BriefcaseIcon, CodeIcon, GlobeIcon } from "lucide-react";
 
 export default function Experience() {
   const [activeTab, setActiveTab] = useState("all");
