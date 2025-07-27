@@ -130,7 +130,7 @@ export default function Skills() {
           </p>
         </div>
       </div>
-      <div className="not-prose flex w-full items-center justify-center z-[15] relative mb-5 dark:border-darkBorder bg-white dark:bg-secondaryBlack bg-[radial-gradient(#80808080_1px,transparent_1px)] px-4 py-6` md:p-12 md:!pb-8 shadow-light dark:shadow-dark [background-size:16px_16px] m750:px-5 m750:py-10 border-2 border-border shadow-shadow">
+      <div className="not-prose flex w-full items-center justify-center z-[15] relative mb-5 dark:border-darkBorder bg-white dark:bg-secondaryBlack bg-[radial-gradient(#80808080_1px,transparent_1px)] px-4 2sm:py-4 sm:py-10 md:p-12 md:!pb-8 shadow-light dark:shadow-dark [background-size:16px_16px] m750:px-5 m750:py-10 border-2 border-border shadow-shadow">
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 py-4 sm:py-0 md:gap-5">
             {skills.map((skill, index) => (
