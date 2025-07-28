@@ -17,29 +17,32 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 import { ThemeSwitcher } from "./theme/ThemeSwitcher";
-import DynamicSVG from "./DynamicSVG";
-
-const array = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-  {
-    name: "Experience",
-    href: "/experience",
-  },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { space_Grotesk } from "@/app/fonts";
+import { useTranslations } from 'next-intl';
 
 export const Header = () => {
   const pathname = usePathname();
+  const t = useTranslations();
+
+  const array = [
+    {
+      name: t("navigation.home"),
+      href: "/",
+    },
+    {
+      name: t("navigation.about"),
+      href: "/about",
+    },
+    {
+      name: t("navigation.projects"),
+      href: "/projects",
+    },
+    {
+      name: t("navigation.experience"),
+      href: "/experience",
+    },
+  ];
 
   return (
     <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50">
@@ -52,7 +55,7 @@ export const Header = () => {
           className="mb-7"
         />
         <p className="max-sm:text-xs font-base">
-          Open to work, let&apos;s connect!
+          {t("header.openToWork")}
         </p>
         <ArrowRight />
         <Image
@@ -63,24 +66,11 @@ export const Header = () => {
           className="mt-7"
         />
       </div>
-      <div className="w-full h-16 border-border border-4 flex items-center justify-between pl-1.5 overflow-hidden bg-bw">
-        <div className="flex items-center gap-6">
-          {/* <Image
-            src="/hero-icon.svg"
-            alt="icon"
-            width={50}
-            height={50}
-            className="h-12 w-12 dark:hidden"
-          />
-          <Image
-            src="/hero-icon-dark.svg"
-            alt="icon"
-            width={50}
-            height={50}
-            className="h-12 w-12 dark:block hidden"
-          /> */}
-          <DynamicSVG/>
-          <div className="flex gap-10 items-center h-full max-xl:hidden">
+      <div className="w-full h-16 border-border border-4 flex items-center bg-bw xl:grid xl:grid-cols-3">
+          <h1 className={`[text-shadow:2px_1.8px_0px_#FD9745] xl:justify-self-start pl-6 max-xl:pl-4 max-sm:pl-2 max-xl:text-2xl max-sm:text-xl ${space_Grotesk.className} text-3xl font-black tracking-tight lg:text-4xl`}>
+            huajar
+          </h1>
+          <div className="hidden xl:flex gap-10 items-center justify-center h-full">
             {array.map((item, index) => (
               <Link
                 key={index}
@@ -93,14 +83,11 @@ export const Header = () => {
               </Link>
             ))}
           </div>
-        </div>
-        <div className="flex gap-4 justify-end items-center w-full pr-4 lg:pr-0">
-          <Button variant="reverse" className="bg-[#FD9745] dark:bg-bw">Resume</Button>
-          <div className="hidden xl:flex items-center mr-3">
-            <ThemeSwitcher className="bg-bw dark:text-white"/>
+          <div className="hidden xl:flex gap-2 items-center justify-end">
+            <ThemeSwitcher className="bg-bw dark:text-white" />
+            <LanguageSwitcher className="bg-bw dark:text-white" />
           </div>
-        </div>
-        <div className="xl:hidden h-full">
+        <div className="xl:hidden h-full ml-auto">
           <Sheet>
             <SheetTrigger asChild>
               <Button
@@ -112,7 +99,7 @@ export const Header = () => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
+                <SheetTitle>{t("header.menu")}</SheetTitle>
               </SheetHeader>
               <div className="grid mt-5 border-2 overflow-hidden border-border">
                 {array.map((item, index) => (
@@ -138,6 +125,7 @@ export const Header = () => {
               </div>
               <SheetFooter className="mt-5 gap-4 md:flex md:flex-col">
                 <ThemeSwitcher className="w-full bg-[#FD9745]" />
+                <LanguageSwitcher className="w-full bg-[#FD9745]" />
               </SheetFooter>
             </SheetContent>
           </Sheet>
