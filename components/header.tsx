@@ -18,10 +18,10 @@ import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 import { ThemeSwitcher } from "./theme/ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { space_Grotesk } from "@/app/fonts";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/hooks/useTranslations';
 import Star10 from "./ui/star";
 
-export const Header = () => {
+export function Header() {
   const pathname = usePathname();
   const t = useTranslations();
 
@@ -32,15 +32,15 @@ export const Header = () => {
     },
     {
       name: t("navigation.about"),
-      href: "/about",
+      href: "#about",
     },
     {
       name: t("navigation.projects"),
-      href: "/projects",
+      href: "#projects",
     },
     {
       name: t("navigation.experience"),
-      href: "/experience",
+      href: "#experience",
     },
   ];
 
@@ -120,4 +120,4 @@ export const Header = () => {
       </div>
     </MaxWidthWrapperNavbar>
   );
-};
+}

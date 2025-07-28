@@ -2,7 +2,7 @@
 import { Globe, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations } from "@/hooks/useTranslations";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "../ui/badge";

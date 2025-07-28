@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="light">
       <body className={`${publicSans.variable} antialiased bg-bg`}>
-        <IntlProvider>
-          <LocaleProvider>
+        <LocaleProvider>
+          <IntlProvider>
             <ThemeProvider
               attribute="class"
               defaultTheme="light"
@@ -30,8 +30,8 @@ export default function RootLayout({
               <Header />
               <main>{children}</main>
             </ThemeProvider>
-          </LocaleProvider>
-        </IntlProvider>
+          </IntlProvider>
+        </LocaleProvider>
       </body>
     </html>
   );
