@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "experience": "Experiencia"
+  },
+  "header": {
+    "openToWork": "Disponible para trabajar, ¡conectémonos!",
+    "menu": "Menú"
+  }
+}

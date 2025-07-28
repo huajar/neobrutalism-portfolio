@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience"
+  },
+  "header": {
+    "openToWork": "Open to work, let's connect!",
+    "menu": "Menu"
+  }
+}
