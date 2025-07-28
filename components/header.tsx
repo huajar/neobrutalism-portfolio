@@ -20,6 +20,7 @@ import { ThemeSwitcher } from "./theme/ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { space_Grotesk } from "@/app/fonts";
 import { useTranslations } from 'next-intl';
+import Star10 from "./ui/star";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -46,29 +47,24 @@ export const Header = () => {
 
   return (
     <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50">
-      <div className=" w-full h-10 bg-main FD9745] overflow-hidden p-0 cursor-pointer text-mtext border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
-        <Image
+      <div className=" w-full h-10 bg-main FD9745] overflow-hidden p-0 cursor-pointer text-mtext border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+        {/* <Image
           src="/Abstract.svg"
           alt="Abstract_logo"
           width={50}
           height={50}
           className="mb-7"
-        />
+        /> */}
+        <Star10 className="mb-7" size={25} color="#FD9745" stroke="#000000" strokeWidth={5}/>
         <p className="max-sm:text-xs font-base">
           {t("header.openToWork")}
         </p>
         <ArrowRight />
-        <Image
-          src="/Abstract.svg"
-          alt="Abstract_logo"
-          width={30}
-          height={30}
-          className="mt-7"
-        />
+        <Star10 className="mt-7" size={25} color="#FD9745" stroke="#000000" strokeWidth={5}/>
       </div>
       <div className="w-full h-16 border-border border-4 flex items-center bg-bw xl:grid xl:grid-cols-3">
-          <h1 className={`[text-shadow:2px_1.8px_0px_#FD9745] xl:justify-self-start pl-6 max-xl:pl-4 max-sm:pl-2 max-xl:text-2xl max-sm:text-xl ${space_Grotesk.className} text-3xl font-black tracking-tight lg:text-4xl`}>
-            huajar
+          <h1 className={`[text-shadow:2px_1.8px_0px_#FD9745] pl-5 ${space_Grotesk.className} text-4xl font-black tracking-tight lg:text-4xl`}>
+            rodrigo
           </h1>
           <div className="hidden xl:flex gap-10 items-center justify-center h-full">
             {array.map((item, index) => (
@@ -84,8 +80,7 @@ export const Header = () => {
             ))}
           </div>
           <div className="hidden xl:flex gap-2 items-center justify-end">
-            <ThemeSwitcher className="bg-bw dark:text-white" />
-            <LanguageSwitcher className="bg-bw dark:text-white" />
+            <LanguageSwitcher className="bg-bw mr-5 dark:text-white" />
           </div>
         <div className="xl:hidden h-full ml-auto">
           <Sheet>
