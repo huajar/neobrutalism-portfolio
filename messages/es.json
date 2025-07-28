@@ -1,7 +1,7 @@
 {
   "navigation": {
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Sobre mí",
     "projects": "Proyectos",
     "experience": "Experiencia"
   },
@@ -11,16 +11,9 @@
   },
   "hero": {
     "greeting": "👋 ¡Hola!",
-    "name": "Rodrigo Huajamaita",
     "title": "Desarrollador",
     "subtitle": "Full Stack",
-    "location": "Entre Ríos, Argentina",
-    "description": "Estudiante de Ingeniería en Sistemas apasionado por construir soluciones web end-to-end. Me encanta experimentar con nuevas tecnologías y crecer constantemente como desarrollador.",
-    "socialLabels": {
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "email": "Correo"
-    }
+    "description": "Estudiante de Ingeniería en Sistemas apasionado por construir soluciones web end-to-end. Me encanta experimentar con nuevas tecnologías y crecer constantemente como desarrollador."
   },
   "common": {
     "loading": "Cargando...",
