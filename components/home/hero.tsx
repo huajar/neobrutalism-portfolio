@@ -28,39 +28,20 @@ export function Hero() {
               </div>
             </div>
             </div>
-          {/*
-          <div className="relative w-[270px] h-[270px] sm:w-[400px] sm:h-[400px] shrink-0">
-            <div className="absolute top-11 left-[-1rem] right-[-1rem] h-[5px] bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
-            <div className="absolute bottom-11 left-[-1rem] right-[-1rem] h-[5px] bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
-            <div className="absolute left-11 top-[-1rem] bottom-[-1rem] w-[5px] bg-gradient-to-t from-transparent via-blue-300 to-transparent" />
-            <div className="absolute right-11 top-[-1rem] bottom-[-1rem] w-[5px] bg-gradient-to-t from-transparent via-blue-300 to-transparent" />
-            <div className="absolute inset-12 rounded-lg">
-              <Image
-                src="/image-preview.svg"
-                alt="Profile picture"
-                fill
-                className="object-cover rounded-3xl"
-                priority
-                sizes="(max-width: 640px) 300px, (max-width: 768px) 400px, 400px"
-              />
-            </div>
-          </div> 
-          */}
-
           {/* Text content - adjusted spacing for both layouts */}
           <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left md:mt-0">
             <div className="space-y-4">
-              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 bg-[#000]  dark:bg-bw text-white">
+              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ">
                 Rodrigo Huajamaita
               </Badge>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-                Full-Stack
+              <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:4px_4px_0px_#000000]">
+                Full Stack
                 <br />
                 Developer
               </h1>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Globe className="h-4 w-4" />
-                <span className="font-semibold">Buenos Aires - Entre Ríos, Argentina</span>
+                <span className="font-semibold">Entre Ríos, Argentina</span>
               </div>
               <p className="md:text-xl max-w-[600px]">
                 A Systems Engineering student passionate about Full Stack

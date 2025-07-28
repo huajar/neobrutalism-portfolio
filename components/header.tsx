@@ -63,7 +63,7 @@ export const Header = () => {
         <Star10 className="mt-7" size={25} color="#FD9745" stroke="#000000" strokeWidth={5}/>
       </div>
       <div className="w-full h-16 border-border border-4 flex items-center bg-bw xl:grid xl:grid-cols-3">
-          <h1 className={`[text-shadow:2px_1.8px_0px_#FD9745] pl-5 ${space_Grotesk.className} text-4xl font-black tracking-tight lg:text-4xl`}>
+          <h1 className={`[text-shadow:3px_3px_0px_#000] [-webkit-text-stroke: 3px black] stroke-b text-[#FD9745] pl-5 ${space_Grotesk.className} text-4xl font-black tracking-tight lg:text-4xl`}>
             rodrigo
           </h1>
           <div className="hidden xl:flex gap-10 items-center justify-center h-full">
