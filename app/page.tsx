@@ -10,9 +10,9 @@ export default function Portfolio() {
   return (
     <MaxWidthWrapper className="mb-14 space-y-32">
       <Hero />
+      <Experience />
       <Skills />
       <Projects />
-      <Experience />
     </MaxWidthWrapper>
   );
 }
