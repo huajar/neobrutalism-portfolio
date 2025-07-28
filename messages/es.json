@@ -8,5 +8,27 @@
   "header": {
     "openToWork": "Disponible para trabajar, ¡conectémonos!",
     "menu": "Menú"
+  },
+  "hero": {
+    "greeting": "👋 ¡Hola!",
+    "name": "Rodrigo Huajamaita",
+    "title": "Desarrollador",
+    "subtitle": "Full Stack",
+    "location": "Entre Ríos, Argentina",
+    "description": "Estudiante de Ingeniería en Sistemas apasionado por construir soluciones end-to-end. Me encanta experimentar con nuevas tecnologías y crecer constantemente como desarrollador.",
+    "socialLabels": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Correo"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Intentar de nuevo",
+    "contact": "Contacto",
+    "learnMore": "Saber más",
+    "viewProject": "Ver proyecto",
+    "readMore": "Leer más"
   }
 }

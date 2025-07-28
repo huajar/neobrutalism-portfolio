@@ -8,5 +8,27 @@
   "header": {
     "openToWork": "Open to work, let's connect!",
     "menu": "Menu"
+  },
+  "hero": {
+    "greeting": "👋 Hello!",
+    "name": "Rodrigo Huajamaita",
+    "title": "Full Stack",
+    "subtitle": "Developer",
+    "location": "Entre Ríos, Argentina",
+    "description": "A Systems Engineering student passionate about building end-to-end solutions. I love experimenting with new technologies and constantly growing as a developer.",
+    "socialLabels": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "contact": "Contact",
+    "learnMore": "Learn more",
+    "viewProject": "View project",
+    "readMore": "Read more"
   }
 }
