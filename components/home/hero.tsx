@@ -32,7 +32,6 @@ export function Hero() {
               </div>
             </div>
             </div>
-          {/* Text content - adjusted spacing for both layouts */}
           <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left md:mt-0">
             <div className="space-y-4">
               <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ">
@@ -43,17 +42,17 @@ export function Hero() {
                 <br />
                 {t('subtitle')}
               </h1>
-              <div className="flex items-center justify-center lg:justify-start gap-2">
-                <Globe className="h-4 w-4" />
-                <span className="font-semibold">{t('location')}</span>
-              </div>
               <p className="md:text-xl max-w-[600px]">
                 {t('description')}
               </p>
+              <address className="flex items-center justify-center lg:justify-start gap-2">
+                <Globe className="h-4 w-4 mt-[1.5px]" />
+                <span className="font-semibold">{t('location')}</span>
+              </address>
             </div>
             <div className="flex lg:justify-center lg:items-center space-x-4">
-              <Link href="https://github.com" target="_blank">
-                <Button size="icon">
+              <Link href="https://github.com/huajar" target="_blank">
+                <Button size="icon" variant='neutral'>
                   <Image
                     src="/github.svg"
                     width={24}
@@ -63,8 +62,8 @@ export function Hero() {
                   <span className="sr-only">{t('socialLabels.github')}</span>
                 </Button>
               </Link>
-              <Link href="https://linkedin.com" target="_blank">
-                <Button size="icon">
+              <Link href="https://www.linkedin.com/in/rhuaja/" target="_blank">
+                <Button size="icon" variant='neutral'>
                   <Image
                     src="/inBug-Black.png"
                     width={24}
@@ -75,7 +74,7 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="mailto:rhuajamaita@gmail.com">
-                <Button className="[&_svg]:size-auto" size="icon">
+                <Button className="[&_svg]:size-auto" size="icon" variant='neutral'>
                   <Mail width={64} height={24}/>
                   <span className="sr-only">{t('socialLabels.email')}</span>
                 </Button>
