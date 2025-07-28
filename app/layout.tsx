@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { Providers } from "./provider";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import IntlProvider from "@/components/IntlProvider";
-
-const publicSans = Public_Sans({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { publicSans } from "./fonts";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body
-        className={`${publicSans.variable} antialiased bg-bg`}
-      >
+      <body className={`${publicSans.variable} antialiased bg-bg`}>
         <IntlProvider>
           <LocaleProvider>
             <ThemeProvider
@@ -33,7 +27,8 @@ export default function RootLayout({
               defaultTheme="light"
               disableTransitionOnChange
             >
-              <Providers>{children}</Providers>
+              <Header />
+              <main>{children}</main>
             </ThemeProvider>
           </LocaleProvider>
         </IntlProvider>

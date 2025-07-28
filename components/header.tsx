@@ -46,7 +46,7 @@ export const Header = () => {
   ];
 
   return (
-    <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50">
+    <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50 mt-2">
       <div className=" w-full h-10 bg-main FD9745] overflow-hidden p-0 cursor-pointer text-mtext border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
         {/* <Image
           src="/Abstract.svg"
