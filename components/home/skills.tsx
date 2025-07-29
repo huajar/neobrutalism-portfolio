@@ -5,7 +5,6 @@ import {
   Database,
   Layers,
   Server,
-  Smartphone,
   Braces,
   GitBranch,
   Palette,

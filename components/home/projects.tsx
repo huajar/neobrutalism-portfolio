@@ -81,7 +81,7 @@ export default function FeaturedProjects() {
               My Projects
             </h2>
             <p className="md:text-lg max-w-[600px]">
-              Explore a selection of my work, where I've gained
+              Explore a selection of my work, where I&#39;ve gained
               practical experience developing and contributing to web solutions
               for clients and organizations.
             </p>
