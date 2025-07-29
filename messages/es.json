@@ -23,5 +23,45 @@
     "learnMore": "Saber más",
     "viewProject": "Ver proyecto",
     "readMore": "Leer más"
+  },
+  "experience": {
+    "badge": "Mi trayectoria y",
+    "title": "Experiencia",
+    "subtitle": "Un resumen de mis contribuciones en diversos roles de TI, donde he aplicado mis conocimientos para crear soluciones funcionales y expandir mis competencias profesionales.",
+    "keyAchievements": "Logros Clave:",
+    "experiences": {
+      "1": {
+        "title": "Desarrollador Full Stack Jr.",
+        "company": "Media Center Asia Central",
+        "period": "Jul 2024 - Abr 2025",
+        "description": "Mantuve y mejoré un proyecto legacy de Django, mejorando el rendimiento, la seguridad y los flujos de autenticación.",
+        "achievements": {
+          "0": "Migré la autenticación de usuarios de SQLite a PostgreSQL, mejorando la seguridad y escalabilidad",
+          "1": "Implementé Django-Allauth para una integración perfecta de autenticación de terceros"
+        }
+      },
+      "2": {
+        "title": "Desarrollador Web",
+        "company": "Freelance",
+        "period": "Ene 2024 - Dic 2024",
+        "description": "Adquirí experiencia práctica trabajando como desarrollador web freelance, creando aplicaciones y sitios web personalizados para clientes de diversas regiones. Me enfoqué en entregar soluciones fáciles de usar y garantizar una comunicación y soporte efectivos con los clientes.",
+        "achievements": {
+          "0": "Apliqué habilidades fundamentales de desarrollo web para crear aplicaciones y sitios web personalizados",
+          "1": "Construí sitios funcionales de WordPress y WooCommerce para abordar la necesidad de los clientes de tener presencia en línea y mejorar su alcance digital.",
+          "2": "Desarrollé aplicaciones iniciales de Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
+          "3": "Proporcioné soporte directo al cliente y entregué actualizaciones menores de funcionalidades, mejorando la funcionalidad del proyecto y la satisfacción del cliente."
+        }
+      },
+      "3": {
+        "title": "Desarrollador Web Voluntario",
+        "company": "Hope Media Asia Central",
+        "period": "Abr 2023 - Abr 2024",
+        "description": "Adquirí experiencia práctica contribuyendo al desarrollo de una aplicación web. Colaboré efectivamente con un equipo de desarrolladores y diseñadores para implementar nuevas funcionalidades y resolver errores, mejorando directamente la experiencia del usuario y el engagement. Este rol me proporcionó una valiosa exposición a flujos de trabajo de desarrollo del mundo real y prácticas colaborativas.",
+        "achievements": {
+          "0": "Colaboré dentro de un equipo de 3 desarrolladores en un proyecto de desarrollo web, participando en todas las fases de desarrollo de software, desde la recopilación de requisitos hasta la implementación.",
+          "1": "Apliqué habilidades centrales de front-end y back-end en un entorno de equipo colaborativo, adaptándome a los requisitos del proyecto y fomentando la comunicación efectiva."
+        }
+      }
+    }
   }
 }

@@ -34,7 +34,7 @@ export function Hero() {
             </div>
           <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left md:mt-0">
             <div className="space-y-4">
-              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ">
+              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
                 Rodrigo Huajamaita
               </Badge>
               <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:4px_4px_0px_#000000]">

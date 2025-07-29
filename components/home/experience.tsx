@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -9,21 +8,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Experience() {
+  const t = useTranslations();
 
   const experiences = [
     {
       id: 1,
-      title: "Jr. Full Stack Developer",
-      company: "Media Center Asia Central",
-      period: "Jul 2024 - Present",
-      type: "fullstack",
-      description:
-        "Maintained and enhanced a legacy Django project, improving performance, security, and authentication workflows.",
+      title: t("experience.experiences.1.title"),
+      company: t("experience.experiences.1.company"),
+      period: t("experience.experiences.1.period"),
+      description: t("experience.experiences.1.description"),
       achievements: [
-        "Migrated user authentication from SQLite to PostgreSQL, improving security and scalability",
-        "Implemented Django-Allauth for seamless third-party authentication integration",
+        t("experience.experiences.1.achievements.0"),
+        t("experience.experiences.1.achievements.1"),
       ],
       technologies: [
         "Python",
@@ -37,41 +36,34 @@ export default function Experience() {
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "Freelance",
-      period: "Jan 2024 - Dec 2024",
-      type: "fullstack",
-      description:
-        "I worked with clients from diverse regions, developing and maintaining web applications tailored to their needs. I focused on creating efficient, secure, and easy-to-use solutions, adapting to different technologies and workflows. I communicated directly with clients to understand their goals, develop new features, and provide quality support.",
+      title: t("experience.experiences.2.title"),
+      company: t("experience.experiences.2.company"),
+      period: t("experience.experiences.2.period"),
+      description: t("experience.experiences.2.description"),
       achievements: [
-        "Delivered custom web solutions for clients across different regions, adapting to unique business needs",
-        "Built WordPress and WooCommerce sites to improve client sales and engagement",
-        "Developed and maintained Next.js applications, ensuring scalability and performance",
-        "Implemented secure authentication and data storage solutions with Supabase for client projects",
-        "Provided support and feature updates, ensuring long-term client satisfaction",
+        t("experience.experiences.2.achievements.0"),
+        t("experience.experiences.2.achievements.1"),
+        t("experience.experiences.2.achievements.2"),
+        t("experience.experiences.2.achievements.3"),
       ],
       technologies: [
         "TypeScript",
         "Next.js",
-        "React",
         "Tailwind CSS",
         "Supabase",
         "WordPress",
         "WooCommerce",
-        "Elementor",
       ],
     },
     {
       id: 3,
-      title: "Volunteer Developer",
-      company: "Hope Media Asia Central",
-      period: "Apr 2023 - Apr 2024",
-      type: "frontend",
-      description:
-        "Developed a web application for a non-profit organization, improving user experience and engagement. Collaborated with a team of developers and designers to implement new features and fix bugs.",
+      title: t("experience.experiences.3.title"),
+      company: t("experience.experiences.3.company"),
+      period: t("experience.experiences.3.period"),
+      description: t("experience.experiences.3.description"),
       achievements: [
-        "Collaborated in a 3-developer team to build The Friends Language Club, covering all software development phases: requirements gathering, planning, diagrams, use cases, UI design, and implementation.",
-        "Developed a fully responsive and user-friendly web application, improving accessibility and engagement.",
+        t("experience.experiences.3.achievements.0"),
+        t("experience.experiences.3.achievements.1"),
       ],
       technologies: [
         "TypeScript",
@@ -84,34 +76,18 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-16" id="experience">
       <div className="container px-4 md:px-6">
-        {/* <div className="space-y-2">
-          <Badge className="text-base font-medium justify-center items-center py-0 !pb-1 bg-black text-white dark:bg-bw">
-            career path
-          </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-            Professional Experience
-          </h2>
-          <p className="md:text-lg max-w-[600px]">
-            A journey through my professional career, showcasing projects and
-            technologies I've worked with to deliver exceptional digital
-            experiences.
-          </p>
-        </div> */}
-
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <Badge className="text-base font-medium justify-center items-center py-0 !pb-1 bg-black text-white dark:bg-bw">
-              career path
+            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+              {t("experience.badge")}
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-              My Experience
+            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+              {t("experience.title")}
             </h2>
             <p className="md:text-lg max-w-[600px]">
-              A glimpse into my professional journey, highlighting the projects
-              and technologies that shape my approach to creating digital
-              experiences.
+              {t("experience.subtitle")}
             </p>
           </div>
         </div>
@@ -120,14 +96,14 @@ export default function Experience() {
             <div key={exp.id}>
               <Card>
                 <CardHeader className="pb-2">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
                       <CardTitle className="text-xl">{exp.title}</CardTitle>
                       <CardDescription className="text-base font-medium text-primary">
                         {exp.company}
                       </CardDescription>
                     </div>
-                    <div className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full w-fit">
+                    <div className="text-sm font-medium text-muted-foreground bg-muted mt-1 rounded-full w-fit">
                       {exp.period}
                     </div>
                   </div>
@@ -137,7 +113,7 @@ export default function Experience() {
 
                   <div className="mb-4">
                     <h4 className="text-sm font-semibold mb-2">
-                      Key Achievements:
+                      {t("experience.keyAchievements")}
                     </h4>
                     <ul className="space-y-1 list-disc list-inside text-sm text-muted-foreground">
                       {exp.achievements.map((achievement, i) => (

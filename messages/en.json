@@ -23,5 +23,45 @@
     "learnMore": "Learn more",
     "viewProject": "View project",
     "readMore": "Read more"
+  },
+  "experience": {
+    "badge": "My journey and",
+    "title": "Experience",
+    "subtitle": "An overview of my contributions across diverse IT roles, where I've applied my knowledge to create functional solutions and expand my professional competencies.",
+    "keyAchievements": "Key Achievements:",
+    "experiences": {
+      "1": {
+        "title": "Jr. Full Stack Developer",
+        "company": "Media Center Asia Central",
+        "period": "Jul 2024 - Apr 2025",
+        "description": "Maintained and enhanced a legacy Django project, improving performance, security, and authentication workflows.",
+        "achievements": {
+          "0": "Migrated user authentication from SQLite to PostgreSQL, improving security and scalability",
+          "1": "Implemented Django-Allauth for seamless third-party authentication integration"
+        }
+      },
+      "2": {
+        "title": "Web Developer",
+        "company": "Freelance",
+        "period": "Jan 2024 - Dec 2024",
+        "description": "Gained practical experience working as a freelance web developer, creating tailored applications and websites for clients in diverse regions. Focused on delivering user-friendly solutions and ensuring effective client communication and support.",
+        "achievements": {
+          "0": "Applied foundational web development skills to create tailored applications and websites",
+          "1": "Built functional WordPress and WooCommerce sites to address client's need for an online presence and improve their digital outreach.",
+          "2": "Developed initial Next.js applications, gaining experience in modern web frameworks and basic performance considerations.",
+          "3": "Provided direct client support and delivered minor feature updates, enhancing project functionality and client satisfaction."
+        }
+      },
+      "3": {
+        "title": "Volunteer Web Developer",
+        "company": "Hope Media Asia Central",
+        "period": "Apr 2023 - Apr 2024",
+        "description": "Gained practical experience contributing to the development of a web application. Collaborated effectively with a team of developers and designers to implement new features and resolve bugs, directly enhancing user experience and engagement. This role provided valuable exposure to real-world development workflows and collaborative practices.",
+        "achievements": {
+          "0": "Collaborated within a 3-developer team on a web application project, participating in all software development phases, from requirements gathering to implementation.",
+          "1": "Applied core front-end and back-end skills in a collaborative team environment, adapting to project requirements and fostering effective communication."
+        }
+      }
+    }
   }
 }
