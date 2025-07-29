@@ -9,7 +9,7 @@ type Props = {
 
 export default function IntlProvider({ children }: Props) {
   const [locale, setLocale] = useState('en')
-  const [messages, setMessages] = useState<any>(null)
+  const [messages, setMessages] = useState<Record<string, unknown> | null>(null)
 
   useEffect(() => {
     const getCookie = (name: string) => {
@@ -21,21 +21,21 @@ export default function IntlProvider({ children }: Props) {
     const savedLocale = getCookie('locale') || 'en'
     setLocale(savedLocale)
     
-    import(`../messages/${savedLocale}.json`).then((module) => {
-      setMessages(module.default)
+    import(`../messages/${savedLocale}.json`).then((localeModule) => {
+      setMessages(localeModule.default)
     })
   }, [])
 
   const changeLocale = async (newLocale: string) => {
     setLocale(newLocale)
     document.cookie = `locale=${newLocale}; path=/; max-age=31536000`
-    const module = await import(`../messages/${newLocale}.json`)
-    setMessages(module.default)
+    const localeModule = await import(`../messages/${newLocale}.json`)
+    setMessages(localeModule.default)
   }
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      (window as any).changeLocale = changeLocale
+      (window as Window & typeof globalThis & { changeLocale?: (locale: string) => void }).changeLocale = changeLocale
     }
   }, [])
 

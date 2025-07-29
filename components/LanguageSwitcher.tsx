@@ -11,8 +11,11 @@ export function LanguageSwitcher({className}: {className?: string}) {
     const newLocale = locale === 'en' ? 'es' : 'en'
     setLocale(newLocale)
     
-    if (typeof window !== 'undefined' && (window as any).changeLocale) {
-      (window as any).changeLocale(newLocale)
+    if (
+      typeof window !== 'undefined' &&
+      (window as Window & typeof globalThis & { changeLocale?: (locale: string) => void }).changeLocale
+    ) {
+      (window as Window & typeof globalThis & { changeLocale?: (locale: string) => void }).changeLocale!(newLocale)
     }
   }
 

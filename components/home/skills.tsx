@@ -61,7 +61,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-full min-h-screen p-4 md:p-8 flex flex-col items-center justify-center">
+    <div className="w-full min-h-screen p-4 md:p-8 flex flex-col items-center justify-center" id="skills">
       <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
         <div className="space-y-2">
           <Badge
