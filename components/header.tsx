@@ -15,7 +15,6 @@ import { ArrowRight, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
-import { ThemeSwitcher } from "./theme/ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { space_Grotesk } from "@/app/fonts";
 import { useTranslations } from '@/hooks/useTranslations';

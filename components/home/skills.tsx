@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge";
 import {
   Code2,
@@ -11,69 +12,21 @@ import {
 } from "lucide-react";
 import { Button } from "../ui/button";
 
-//   const skills = [
-//     {
-//       category: "Frontend",
-//       icon: <Code2 className="h-5 w-5" />,
-//       technologies: ["React", "Next.js", "Vue.js", "Angular", "HTML5", "CSS3"],
-//       color: "bg-blue-500",
-//     },
-//     {
-//       category: "Backend",
-//       icon: <Server className="h-5 w-5" />,
-//       technologies: ["Node.js", "Express", "Django", "Flask", "Spring Boot"],
-//       color: "bg-green-500",
-//     },
-//     {
-//       category: "Database",
-//       icon: <Database className="h-5 w-5" />,
-//       technologies: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"],
-//       color: "bg-yellow-500",
-//     },
-//     {
-//       category: "DevOps",
-//       icon: <GitBranch className="h-5 w-5" />,
-//       technologies: ["Docker", "Kubernetes", "AWS", "CI/CD", "Git"],
-//       color: "bg-purple-500",
-//     },
-//     {
-//       category: "Mobile",
-//       icon: <Smartphone className="h-5 w-5" />,
-//       technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
-//       color: "bg-pink-500",
-//     },
-//     {
-//       category: "Languages",
-//       icon: <Braces className="h-5 w-5" />,
-//       technologies: ["JavaScript", "TypeScript", "Python", "Java", "C#", "Go"],
-//       color: "bg-red-500",
-//     },
-//     {
-//       category: "UI/UX",
-//       icon: <Palette className="h-5 w-5" />,
-//       technologies: ["Figma", "Adobe XD", "Sketch", "Tailwind CSS", "SASS"],
-//       color: "bg-indigo-500",
-//     },
-//     {
-//       category: "Architecture",
-//       icon: <Layers className="h-5 w-5" />,
-//       technologies: ["Microservices", "REST API", "GraphQL", "WebSockets"],
-//       color: "bg-teal-500",
-//     },
-//   ]
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Skills() {
+  const t = useTranslations("skills");
   const skills = [
     {
       category: "Frontend",
       icon: <Code2 className="h-5 w-5" />,
-      technologies: ["React", "Next.js", "HTML5", "CSS3"],
+      technologies: ["Next.js", "HTML", "CSS", "Tailwind CSS"],
       color: "bg-blue-400",
     },
     {
       category: "Backend",
       icon: <Server className="h-5 w-5" />,
-      technologies: ["Node.js", "Express", "Django"],
+      technologies: ["Nodejs", "Django", "Prisma"],
       color: "bg-green-400",
     },
     {
@@ -85,29 +38,23 @@ export default function Skills() {
     {
       category: "DevOps",
       icon: <GitBranch className="h-5 w-5" />,
-      technologies: ["Docker", "Git"],
+      technologies: ["Docker", "Git", "Github Actions", "Gitlab CI/CD"],
       color: "bg-purple-400",
     },
     {
-      category: "Mobile",
-      icon: <Smartphone className="h-5 w-5" />,
-      technologies: ["React Native", "Kotlin"],
-      color: "bg-pink-400",
-    },
-    {
-      category: "Languages",
+      category: t("Languages"),
       icon: <Braces className="h-5 w-5" />,
-      technologies: ["JavaScript", "TypeScript", "Python", "C#"],
+      technologies: ["JavaScript", "TypeScript", "Python"],
       color: "bg-red-400",
     },
     {
       category: "UI/UX",
       icon: <Palette className="h-5 w-5" />,
-      technologies: ["Figma", "Tailwind CSS"],
+      technologies: ["Figma"],
       color: "bg-indigo-400",
     },
     {
-      category: "Architecture",
+      category: t("Architecture"),
       icon: <Layers className="h-5 w-5" />,
       technologies: ["REST API", "WebSockets"],
       color: "bg-teal-400",
@@ -118,15 +65,17 @@ export default function Skills() {
     <div className="w-full min-h-screen p-4 md:p-8 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
         <div className="space-y-2">
-          <Badge className="text-base font-medium justify-center items-center py-0 !pb-1 bg-black text-white dark:bg-bw">
-            Honing
+          <Badge
+            variant="neutral"
+            className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_#000] border-black border-4"
+          >
+            {t("badge")}
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-            My Skills
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+            {t("title")}
           </h2>
           <p className="md:text-lg max-w-[600px]">
-            I enjoy experimenting with these technologies, constantly learning
-            and expanding my skills in different areas of development.
+            {t("description")}
           </p>
         </div>
       </div>

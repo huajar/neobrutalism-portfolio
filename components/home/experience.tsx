@@ -112,9 +112,9 @@ export default function Experience() {
                   <p className="mb-4">{exp.description}</p>
 
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold mb-2">
+                    <p className="text-sm font-semibold mb-2">
                       {t("experience.keyAchievements")}
-                    </h4>
+                    </p>
                     <ul className="space-y-1 list-disc list-inside text-sm text-muted-foreground">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i}>{achievement}</li>

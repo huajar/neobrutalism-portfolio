@@ -24,6 +24,14 @@
     "viewProject": "Ver proyecto",
     "readMore": "Leer más"
   },
+
+  "skills": {
+    "Languages": "Lenguajes",
+    "Architecture": "Arquitectura"
+    ,"badge": "Desarrollando"
+    ,"title": "Mis habilidades"
+    ,"description": "Estoy expandiendo continuamente mi comprensión de estas tecnologías, explorando activamente nuevas y construyendo sobre mi conocimiento fundamental en diversos dominios de desarrollo."
+  },
   "experience": {
     "badge": "Mi trayectoria y",
     "title": "Experiencia",
