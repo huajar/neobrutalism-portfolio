@@ -1,3 +1,4 @@
+"use client"
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -5,67 +6,54 @@ import { ExternalLink, Github, Calendar } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useTranslations } from "@/hooks/useTranslations";
+
 export default function FeaturedProjects() {
+  const t = useTranslations("projects");
   const projects = [
     {
-      title: "Alkitab",
-      description:
-        "Web App to connect kyrkystanies to the christianism, i do featuareas and mantenimence, developed by Hope Media Asia Central",
+      title: t("0.title"),
+      description: t("0.description"),
       image: "/AlKitab.webp",
       technologies: ["Django", "PostgreSQL", "HTML5", "CSS"],
       deployLink: "",
-      demoLink: "https://friendslanguage.club/",
+      demoLink: "https://alkitab.media/",
       repoLink: "",
-      completedDate: "",
+      completedDate: t("0.completedDate"),
     },
     {
-      title: "ColporMaps",
-      description:
-        "An web application that allows managers to track members status, territories, and placements for door-to-door sales teams.",
-      image: "/colporteur-maps.webp",
-      technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-      deployLink: "",
-      demoLink: "https://example.com/demo",
-      repoLink: "",
-      completedDate: "In development",
-    },
-    {
-      title: "Ediciones Lucentia",
-      description:
-        "A landing page for a editorial that sells books, e-books and audiobooks.",
+      title: t("1.title"),
+      description: t("1.description"),
       image: "/ediciones-lucentia.webp",
-      technologies: ["WordPress", "Elementor"],
+      technologies: ["WordPress"],
       deployLink: "https://edicioneslucentia.com/",
       demoLink: "",
       repoLink: "",
-      completedDate: "October 2024",
+      completedDate: t("1.completedDate"),
     },
     {
-      title: "Adventist On The Map",
-      description:
-        "Is a platform that connects Adventist freelancers with clients who need their services.",
+      title: t("2.title"),
+      description: t("2.description"),
       image: "/AOTM.webp",
       technologies: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
       deployLink: "https://adventistonthemap.com/",
       demoLink: "",
       repoLink: "",
-      completedDate: "August 2024",
+      completedDate: t("2.completedDate"),
     },
     {
-      title: "Profeteia",
-      description:
-        "A e-commerce and personal blog web for a client who sells virtual products.",
+      title: t("3.title"),
+      description: t("3.description"),
       image: "/Profeteia.webp",
-      technologies: ["WordPress", "WooCommerce", "Elementor"],
+      technologies: ["WordPress", "WooCommerce"],
       deployLink: "https://profeteia.com/",
       demoLink: "",
       repoLink: "",
-      completedDate: "Junary 2024",
+      completedDate: t("3.completedDate"),
     },
     {
-      title: "The Friends Language Club",
-      description:
-        "A platform that connects language learners with native speakers for practice and cultural exchange.",
+      title: t("4.title"),
+      description: t("4.description"),
       image: "/friendslanguage.webp",
       technologies: [
         "Next.js",
@@ -77,7 +65,7 @@ export default function FeaturedProjects() {
       deployLink: "",
       demoLink: "https://friendslanguage.club/",
       repoLink: "",
-      completedDate: "December 2023",
+      completedDate: t("4.completedDate"),
     },
   ];
 
@@ -86,15 +74,16 @@ export default function FeaturedProjects() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <Badge className="text-base font-medium justify-center items-center py-0 !pb-1 bg-black text-white dark:bg-bw">
-              involved in
+            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+               Showcases of
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:4px_4px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-            My Projects
+            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+              My Projects
             </h2>
             <p className="md:text-lg max-w-[600px]">
-              Check out some of my recent work. I am involved with development
-              and maintenance proyects for clients and organizations.
+              Explore a selection of my work, where I've gained
+              practical experience developing and contributing to web solutions
+              for clients and organizations.
             </p>
           </div>
         </div>
@@ -102,7 +91,7 @@ export default function FeaturedProjects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden bg-bw flex flex-col border-8"
+              className="overflow-hidden bg-bw flex flex-col"
             >
               <Image
                 src={project.image}
@@ -143,38 +132,28 @@ export default function FeaturedProjects() {
                 </div>
               </CardContent>
               <CardFooter className="p-4 sm:p-6 pt-0 flex flex-col sm:flex-row gap-3">
-                {project.deployLink && (
-                  <Button
-                    size="sm"
-                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
-                    asChild
-                  >
-                    <Link
-                      href={project.deployLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Deployed Link
-                    </Link>
-                  </Button>
-                )}
-                {project.demoLink && (
-                  <Button
-                    size="sm"
-                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
-                    asChild
-                  >
-                    <Link
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Link>
-                  </Button>
-                )}
+                {(() => {
+                  const link = project.deployLink || project.demoLink;
+                  if (link) {
+                    return (
+                      <Button
+                        size="sm"
+                        className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
+                        asChild
+                      >
+                        <Link
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Visit
+                        </Link>
+                      </Button>
+                    );
+                  }
+                  return null;
+                })()}
                 {project.repoLink && (
                   <Button
                     size="sm"

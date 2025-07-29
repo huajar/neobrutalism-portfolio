@@ -25,6 +25,34 @@
     "readMore": "Leer más"
   },
 
+  "projects": {
+    "0": {
+      "title": "Alkitab (versión antigua)",
+      "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación."
+      ,"completedDate": "Julio 2024"
+    },
+    "1": {
+      "title": "Ediciones Lucentia",
+      "description": "Desarrollé una landing page estática para una editorial, mostrando eficazmente su catálogo de libros, e-books y audiolibros. El sitio fue creado para brindar una experiencia atractiva e informativa, sirviendo como presencia principal en línea para ventas y difusión."
+      ,"completedDate": "Octubre 2024"
+    },
+    "2": {
+      "title": "Adventist On The Map",
+      "description": "Plataforma dedicada a conectar freelancers adventistas con clientes que buscan sus servicios, fomentando una comunidad confiable y capacitada."
+      ,"completedDate": "Agosto 2024"
+    },
+    "3": {
+      "title": "Profeteia",
+      "description": "Desarrollé y personalicé un sitio web de e-commerce y blog personal para un cliente que vende productos virtuales. Mi trabajo se centró en configurar el sitio para una experiencia intuitiva y un sistema robusto para gestionar ventas y entrega de contenido."
+      ,"completedDate": "Enero 2024"
+    },
+    "4": {
+      "title": "The Friends Language Club",
+      "description": "Mi primer proyecto de aplicación web, diseñado como una plataforma para conectar estudiantes de idiomas con hablantes nativos para práctica e intercambio cultural. Este proyecto me brindó experiencia práctica integral en principios de desarrollo web, desde la conceptualización y diseño hasta la implementación y resolución de problemas."
+      ,"completedDate": "Diciembre 2023"
+    }
+  },
+
   "skills": {
     "Languages": "Lenguajes",
     "Architecture": "Arquitectura"
@@ -34,7 +62,7 @@
   },
   "experience": {
     "badge": "Mi trayectoria y",
-    "title": "Experiencia",
+    "title": "Mi Experiencia",
     "subtitle": "Un resumen de mis contribuciones en diversos roles de TI, donde he aplicado mis conocimientos para crear soluciones funcionales y expandir mis competencias profesionales.",
     "keyAchievements": "Logros Clave:",
     "experiences": {
@@ -54,9 +82,9 @@
         "period": "Ene 2024 - Dic 2024",
         "description": "Adquirí experiencia práctica trabajando como desarrollador web freelance, creando aplicaciones y sitios web personalizados para clientes de diversas regiones. Me enfoqué en entregar soluciones fáciles de usar y garantizar una comunicación y soporte efectivos con los clientes.",
         "achievements": {
-          "0": "Apliqué habilidades fundamentales de desarrollo web para crear aplicaciones y sitios web personalizados",
-          "1": "Construí sitios funcionales de WordPress y WooCommerce para abordar la necesidad de los clientes de tener presencia en línea y mejorar su alcance digital.",
-          "2": "Desarrollé aplicaciones iniciales de Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
+          "0": "Desarrollé exitosamente una plataforma de comercio electrónico que generó €1,000 de ingresos anuales para un cliente, demostrando impacto directo en el negocio.",
+          "1": "Construí sitios funcionales para abordar la necesidad de los clientes de tener presencia en línea y mejorar su alcance digital.",
+          "2": "Desarrollé aplicaciones de Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
           "3": "Proporcioné soporte directo al cliente y entregué actualizaciones menores de funcionalidades, mejorando la funcionalidad del proyecto y la satisfacción del cliente."
         }
       },

@@ -71,7 +71,7 @@ export default function Skills() {
           >
             {t("badge")}
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
             {t("title")}
           </h2>
           <p className="md:text-lg max-w-[600px]">
