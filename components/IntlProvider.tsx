@@ -40,7 +40,6 @@ export default function IntlProvider({ children }: Props) {
   }, [])
 
   if (!messages) {
-    // Load default English messages to avoid missing message errors
     const defaultMessages = {
       navigation: {
         home: "Home",

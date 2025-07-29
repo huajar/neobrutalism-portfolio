@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
-import { Providers } from "./provider";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import IntlProvider from "@/components/IntlProvider";
 import { publicSans } from "./fonts";

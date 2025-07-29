@@ -1,4 +1,4 @@
-import { Public_Sans, Space_Grotesk, DM_Sans } from 'next/font/google'
+import { Space_Grotesk, DM_Sans } from 'next/font/google'
  
 
 export const publicSans = DM_Sans({
