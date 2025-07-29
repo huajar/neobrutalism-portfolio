@@ -27,20 +27,16 @@ export function Header() {
 
   const array = [
     {
-      name: t("navigation.home"),
-      href: "/",
-    },
-    {
       name: t("navigation.about"),
       href: "#about",
     },
     {
-      name: t("navigation.projects"),
-      href: "#projects",
-    },
-    {
       name: t("navigation.experience"),
       href: "#experience",
+    },
+    {
+      name: t("navigation.projects"),
+      href: "#projects",
     },
   ];
 
