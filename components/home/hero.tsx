@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { Globe, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "../ui/badge";
 
 export function Hero() {
-  const t = useTranslations('hero');
-  
+  const t = useTranslations("hero");
+
   return (
     <section className="py-12 md:py-24" id="about">
       <div className="container mx-auto px-4 lg:pr-0 md:px-6">
@@ -28,22 +28,25 @@ export function Hero() {
                 priority
               />
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-[#000] border-4 border-black p-2 rotate-12 [box-shadow:4px_4px_0px_0px_#000]">
-                <span className="text-lg font-bold">{t('greeting')}</span>
+                <span className="text-lg font-bold">{t("greeting")}</span>
               </div>
             </div>
-            </div>
+          </div>
           <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left md:mt-0">
             <div className="space-y-4">
-              <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+              <Badge
+                variant="neutral"
+                className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4"
+              >
                 Rodrigo Huajamaita
               </Badge>
               <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:4px_4px_0px_#000000]">
-                {t('title')}
+                {t("title")}
                 <br />
-                {t('subtitle')}
+                {t("subtitle")}
               </h1>
               <p className="md:text-lg font-base max-w-[600px]">
-                {t('description')}
+                {t("description")}
               </p>
               <address className="flex items-center justify-center lg:justify-start gap-2">
                 <Globe className="h-4 w-4 mt-[1.5px]" />
@@ -52,7 +55,7 @@ export function Hero() {
             </div>
             <div className="flex lg:justify-center lg:items-center space-x-4">
               <Link href="https://github.com/huajar" target="_blank">
-                <Button size="icon" variant='neutral' className="border-4">
+                <Button size="icon" variant="neutral" className="border-4">
                   <Image
                     src="/github.svg"
                     width={24}
@@ -63,7 +66,7 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="https://www.linkedin.com/in/rhuaja/" target="_blank">
-                <Button size="icon" variant='neutral' className="border-4">
+                <Button size="icon" variant="neutral" className="border-4">
                   <Image
                     src="/inBug-Black.png"
                     width={24}
@@ -74,8 +77,12 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="mailto:rhuajamaita@gmail.com">
-                <Button className="[&_svg]:size-auto border-4" size="icon" variant='neutral'>
-                  <Mail width={64} height={24}/>
+                <Button
+                  className="[&_svg]:size-auto border-4"
+                  size="icon"
+                  variant="neutral"
+                >
+                  <Mail width={64} height={24} />
                   <span className="sr-only">Email</span>
                 </Button>
               </Link>
