@@ -70,10 +70,10 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 md:py-24 px-4 sm:px-6 lg:px-8" id="projects">
+    <div className="py-24 md:py-24 px-4 sm:px-6 lg:px-8" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-2">
+          <div className="space-y-4">
             <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
               {t("badge")}
             </Badge>

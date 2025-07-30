@@ -15,16 +15,6 @@
     "subtitle": "Full Stack",
     "description": "Estudiante de Ingeniería en Sistemas apasionado por construir soluciones web end-to-end. Me encanta experimentar con nuevas tecnologías y crecer constantemente como desarrollador."
   },
-  "common": {
-    "loading": "Cargando...",
-    "error": "Ocurrió un error",
-    "retry": "Intentar de nuevo",
-    "contact": "Contacto",
-    "learnMore": "Saber más",
-    "viewProject": "Ver proyecto",
-    "readMore": "Leer más"
-  },
-
   "projects": {
     "badge": "Muestras de",
     "title": "Mis Proyectos",
@@ -55,7 +45,6 @@
       ,"completedDate": "Diciembre 2023"
     }
   },
-
   "skills": {
     "Languages": "Lenguajes",
     "Architecture": "Arquitectura"
@@ -102,5 +91,10 @@
         }
       }
     }
+  },
+  "footer": {
+    "contact": "¡Ponte en contacto conmigo!",
+    "builtWith": "Construido con ❤️",
+    "sourceCode": "Código fuente disponible en"
   }
 }

@@ -79,7 +79,7 @@ export default function Experience() {
     <section className="py-24" id="experience">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-2">
+          <div className="space-y-4">
             <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
               {t("experience.badge")}
             </Badge>

@@ -4,12 +4,15 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { Mail } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="w-full bg-bw border-t-4 border-border md:px-28 py-6 mt-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex flex-col items-center md:items-start gap-4">
-        <p className="font-base">Get in touch with me!</p>
+        <p className="font-base">{t("contact")}</p>
         <div className="flex lg:justify-center lg:items-center space-x-4">
           <Link href="https://github.com/huajar" target="_blank">
             <Button size="icon" variant="noShadow" className="bg-white">
@@ -42,16 +45,16 @@ export default function Footer() {
       </div>
       <div className="flex flex-col-reverse md:flex-col-reverse">
         <p className="font-base text-center md:text-start">
-          Built with &#9829;
+          {t("builtWith")}
         </p>
         <div className="flex items-center gap-1">
-          <p className="font-base">The source code is available on</p>
+          <p className="font-base">{t("sourceCode")}</p>
           <Link
             href="https://github.com/huajar/neobrutalism-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="font-base underline">Github.</p>
+            <p className="font-base underline">Github</p>
           </Link>
         </div>
       </div>

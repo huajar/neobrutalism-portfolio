@@ -15,15 +15,6 @@
     "subtitle": "Developer",
     "description": "A Systems Engineering student passionate about building end-to-end web solutions. I love experimenting with new technologies and constantly growing as a developer."
   },
-  "common": {
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "retry": "Try again",
-    "contact": "Contact",
-    "learnMore": "Learn more",
-    "viewProject": "View project",
-    "readMore": "Read more"
-  },
   "projects": {
     "badge": "Showcases of",
     "title": "My Projects",
@@ -100,5 +91,11 @@
         }
       }
     }
+  },
+  "footer":
+  {
+    "contact": "Get in touch with me!",
+    "builtWith": "Built with ❤️",
+    "sourceCode": "Source code available on"
   }
 }
