@@ -25,6 +25,9 @@
     "readMore": "Read more"
   },
   "projects": {
+    "badge": "Showcases of",
+    "title": "My Projects",
+    "description": "Explore a selection of my work, where I've gained practical experience developing and contributing to web solutions for clients and organizations.",
     "0": {
       "title": "Alkitab (old version)",
       "description": "The platform was designed to connect individuals in Kyrgyzstan with Christian resources. My responsibilities included implementing new features and ensuring the application's functionality and accessibility.",
@@ -37,7 +40,7 @@
     },
     "2": {
       "title": "Adventist On The Map",
-      "description": "A dedicated platform connecting Adventist freelancers with clients seeking their services, fostering a trusted and skilled community.",
+      "description": "Developed a public online directory designed for a client to effectively manage and showcase a curated network of Adventist professionals offering various services.",
       "completedDate": "August 2024"
     },
     "3": {

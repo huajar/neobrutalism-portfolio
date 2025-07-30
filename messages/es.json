@@ -26,6 +26,9 @@
   },
 
   "projects": {
+    "badge": "Muestras de",
+    "title": "Mis Proyectos",
+    "description": "Explora una selección de mi trabajo, donde he adquirido experiencia práctica desarrollando y contribuyendo a soluciones web para clientes y organizaciones.",
     "0": {
       "title": "Alkitab (versión antigua)",
       "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación."
@@ -33,7 +36,7 @@
     },
     "1": {
       "title": "Ediciones Lucentia",
-      "description": "Desarrollé una landing page estática para una editorial, mostrando eficazmente su catálogo de libros, e-books y audiolibros. El sitio fue creado para brindar una experiencia atractiva e informativa, sirviendo como presencia principal en línea para ventas y difusión."
+      "description": "Desarrollé un directorio público en línea diseñado para que un cliente administre y muestre de manera eficaz una red seleccionada de profesionales adventistas que ofrecen diversos servicios."
       ,"completedDate": "Octubre 2024"
     },
     "2": {

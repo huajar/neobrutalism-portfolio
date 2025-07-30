@@ -5,6 +5,8 @@ import { LocaleProvider } from "@/contexts/LocaleContext";
 import IntlProvider from "@/components/IntlProvider";
 import { publicSans } from "./fonts";
 import { Header } from "@/components/header";
+import Footer from "@/components/footer";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,6 +30,7 @@ export default function RootLayout({
             >
               <Header />
               <main>{children}</main>
+              <Footer />
             </ThemeProvider>
           </IntlProvider>
         </LocaleProvider>

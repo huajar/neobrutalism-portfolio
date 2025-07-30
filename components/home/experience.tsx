@@ -76,7 +76,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-16" id="experience">
+    <section className="py-24" id="experience">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
@@ -86,7 +86,7 @@ export default function Experience() {
             <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
               {t("experience.title")}
             </h2>
-            <p className="md:text-lg max-w-[600px]">
+            <p className="md:text-lg font-base max-w-[600px]">
               {t("experience.subtitle")}
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function Experience() {
         <div className="mt-0 space-y-8">
           {experiences.map((exp) => (
             <div key={exp.id}>
-              <Card>
+              <Card className="border-4">
                 <CardHeader className="pb-2">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
@@ -109,13 +109,12 @@ export default function Experience() {
                   </div>
                 </CardHeader>
                 <CardContent className="pt-4">
-                  <p className="mb-4">{exp.description}</p>
-
+                  <p className="mb-4 font-base">{exp.description}</p>
                   <div className="mb-4">
                     <p className="text-sm font-semibold mb-2">
                       {t("experience.keyAchievements")}
                     </p>
-                    <ul className="space-y-1 list-disc list-inside text-sm text-muted-foreground">
+                    <ul className="space-y-1 list-disc list-inside text-sm font-base text-muted-foreground">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i}>{achievement}</li>
                       ))}
@@ -124,7 +123,7 @@ export default function Experience() {
 
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.technologies.map((tech, i) => (
-                      <Badge key={i} variant="neutral" className="font-normal">
+                      <Badge key={i} variant="neutral" className="font-base border-4">
                         {tech}
                       </Badge>
                     ))}

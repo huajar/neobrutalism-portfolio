@@ -42,7 +42,7 @@ export function Hero() {
                 <br />
                 {t('subtitle')}
               </h1>
-              <p className="md:text-xl max-w-[600px]">
+              <p className="md:text-xl font-base max-w-[600px]">
                 {t('description')}
               </p>
               <address className="flex items-center justify-center lg:justify-start gap-2">
@@ -52,7 +52,7 @@ export function Hero() {
             </div>
             <div className="flex lg:justify-center lg:items-center space-x-4">
               <Link href="https://github.com/huajar" target="_blank">
-                <Button size="icon" variant='neutral'>
+                <Button size="icon" variant='neutral' className="border-4">
                   <Image
                     src="/github.svg"
                     width={24}
@@ -63,7 +63,7 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="https://www.linkedin.com/in/rhuaja/" target="_blank">
-                <Button size="icon" variant='neutral'>
+                <Button size="icon" variant='neutral' className="border-4">
                   <Image
                     src="/inBug-Black.png"
                     width={24}
@@ -74,7 +74,7 @@ export function Hero() {
                 </Button>
               </Link>
               <Link href="mailto:rhuajamaita@gmail.com">
-                <Button className="[&_svg]:size-auto" size="icon" variant='neutral'>
+                <Button className="[&_svg]:size-auto border-4" size="icon" variant='neutral'>
                   <Mail width={64} height={24}/>
                   <span className="sr-only">Email</span>
                 </Button>

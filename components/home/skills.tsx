@@ -73,7 +73,7 @@ export default function Skills() {
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
             {t("title")}
           </h2>
-          <p className="md:text-lg max-w-[600px]">
+          <p className="md:text-lg font-base max-w-[600px]">
             {t("description")}
           </p>
         </div>
@@ -100,27 +100,6 @@ export default function Skills() {
                   ))}
                 </div>
               </div>
-              // <Card
-              //   key={index}
-              //   className="overflow-hidden bg-slate-500/70 rounded-none"
-              // >
-              //   <CardContent className="p-6">
-              //     <div className="flex items-center gap-3 mb-4">
-              //       <div className={`p-2 rounded-lg ${skill.color}`}>{skill.icon}</div>
-              //       <h3 className="font-semibold text-white text-lg">{skill.category}</h3>
-              //     </div>
-              //     <div className="flex flex-wrap gap-2">
-              //       {skill.technologies.map((tech, techIndex) => (
-              //         <Badge
-              //           key={techIndex}
-              //           variant='neutral'
-              //         >
-              //           {tech}
-              //         </Badge>
-              //       ))}
-              //     </div>
-              //   </CardContent>
-              // </Card>
             ))}
           </div>
         </div>

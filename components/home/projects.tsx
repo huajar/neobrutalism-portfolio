@@ -70,20 +70,18 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8" id="projects">
+    <div className="min-h-screen py-8 sm:py-12 md:py-24 px-4 sm:px-6 lg:px-8" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
-               Showcases of
+              {t("badge")}
             </Badge>
             <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
-              My Projects
+              {t("title")}
             </h2>
             <p className="md:text-lg max-w-[600px]">
-              Explore a selection of my work, where I&#39;ve gained
-              practical experience developing and contributing to web solutions
-              for clients and organizations.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -116,7 +114,7 @@ export default function FeaturedProjects() {
                     </div>
                   )}
                 </div>
-                <p className="text-sm sm:text-base mb-4 dark:text-gray-400">
+                <p className="text-sm sm:text-base font-base mb-4 dark:text-gray-400">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
