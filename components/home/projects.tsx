@@ -80,7 +80,7 @@ export default function FeaturedProjects() {
             <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
               {t("title")}
             </h2>
-            <p className="md:text-lg max-w-[600px]">
+            <p className="md:text-lg font-base max-w-[600px]">
               {t("description")}
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function FeaturedProjects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden bg-bw flex flex-col"
+              className="overflow-hidden bg-bw flex border-4 flex-col"
             >
               <Image
                 src={project.image}
@@ -100,7 +100,7 @@ export default function FeaturedProjects() {
                 }}
                 width={500}
                 height={300}
-                className="w-full h-full object-fit object-center border-b-[1px]"
+                className="w-full h-full object-fit object-center border-black border-b-[4px]"
               />
               <CardContent className="p-4 sm:p-6 flex-grow">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-3">
@@ -108,7 +108,7 @@ export default function FeaturedProjects() {
                     {project.title}
                   </h3>
                   {project.completedDate && (
-                    <div className="flex items-center text-sm dark:text-gray-300">
+                    <div className="flex items-center font-base text-sm dark:text-gray-300">
                       <Calendar className="h-4 w-4 mr-1" />
                       {project.completedDate}
                     </div>
@@ -136,7 +136,7 @@ export default function FeaturedProjects() {
                     return (
                       <Button
                         size="sm"
-                        className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
+                        className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm border-4"
                         asChild
                       >
                         <Link
@@ -155,7 +155,7 @@ export default function FeaturedProjects() {
                 {project.repoLink && (
                   <Button
                     size="sm"
-                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm dark:text-black"
+                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm border-4"
                     asChild
                   >
                     <Link
@@ -163,7 +163,6 @@ export default function FeaturedProjects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Github className="h-4 w-4 mr-2" />
                       Source Code
                     </Link>
                   </Button>

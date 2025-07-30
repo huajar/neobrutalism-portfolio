@@ -3,25 +3,11 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-bw border-t-4 border-border md:px-20 py-9 mt-8 flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-4">
-      <div className="flex flex-col-reverse md:flex-col">
-        <p className="font-base">Built with &#9829;</p>
-        <div className="flex items-center gap-1">
-          <p className="font-base">
-             The source code is available on
-          </p>
-          <Link
-            href="https://github.com/Rwaja/neobrutalism-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="font-base underline">Github.</p>
-          </Link>
-        </div>
-      </div>
+    <footer className="w-full bg-bw border-t-4 border-border md:px-28 py-6 mt-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="flex flex-col items-center md:items-start gap-4">
         <p className="font-base">Get in touch with me!</p>
         <div className="flex lg:justify-center lg:items-center space-x-4">
@@ -41,6 +27,31 @@ export default function Footer() {
               />
               <span className="sr-only">LinkedIn</span>
             </Button>
+          </Link>
+          <Link href="mailto:rhuajamaita@gmail.com">
+            <Button
+              className="[&_svg]:size-auto bg-white"
+              size="icon"
+              variant="noShadow"
+            >
+              <Mail width={64} height={24} />
+              <span className="sr-only">Email</span>
+            </Button>
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-col-reverse md:flex-col-reverse">
+        <p className="font-base text-center md:text-start">
+          Built with &#9829;
+        </p>
+        <div className="flex items-center gap-1">
+          <p className="font-base">The source code is available on</p>
+          <Link
+            href="https://github.com/Rwaja/neobrutalism-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="font-base underline">Github.</p>
           </Link>
         </div>
       </div>

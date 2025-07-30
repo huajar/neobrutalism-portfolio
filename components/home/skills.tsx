@@ -78,7 +78,7 @@ export default function Skills() {
           </p>
         </div>
       </div>
-      <div className="not-prose flex w-full items-center justify-center z-[15] relative mb-5 dark:border-darkBorder bg-white dark:bg-secondaryBlack bg-[radial-gradient(#80808080_1px,transparent_1px)] px-4 2sm:py-4 sm:py-10 md:p-12 md:!pb-8 shadow-light dark:shadow-dark [background-size:16px_16px] m750:px-5 m750:py-10 border-2 border-border shadow-shadow">
+      <div className="not-prose flex w-full items-center justify-center z-[15] relative mb-5 dark:border-darkBorder bg-white dark:bg-secondaryBlack bg-[radial-gradient(#80808080_1px,transparent_1px)] px-4 2sm:py-4 sm:py-10 md:p-12 md:!pb-8 shadow-light dark:shadow-dark [background-size:16px_16px] m750:px-5 m750:py-10 border-4 border-border shadow-shadow">
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 py-4 sm:py-0 md:gap-5">
             {skills.map((skill, index) => (
@@ -86,7 +86,7 @@ export default function Skills() {
                 <div className="flex items-center gap-3 mb-4">
                   <Button
                     variant="reverse"
-                    className={`p-2 ${skill.color} cursor-default dark:text-black `}
+                    className={`p-2 ${skill.color} cursor-default dark:text-black border-4`}
                   >
                     {skill.icon}
                     <h3 className="font-semibold text-lg ">{skill.category}</h3>
