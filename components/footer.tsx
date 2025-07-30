@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="flex items-center gap-1">
           <p className="font-base">The source code is available on</p>
           <Link
-            href="https://github.com/Rwaja/neobrutalism-portfolio"
+            href="https://github.com/huajar/neobrutalism-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
