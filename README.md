@@ -27,10 +27,6 @@ You may have noticed the style, but I decided to go with neo-brutalism. Honestly
 
 Thinking of checking out this project directly on your computer? It's pretty straightforward. Just follow these simple steps:
 
-### Prerequisites
-
-* [node.js](https://nodejs.org/en/download) 
-
 ### Installation
 
    ```sh
