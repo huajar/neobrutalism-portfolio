@@ -27,8 +27,6 @@ You may have noticed the style, but I decided to go with neo-brutalism. Honestly
 
 Thinking of checking out this project directly on your computer? It's pretty straightforward. Just follow these simple steps:
 
-### Installation
-
    ```sh
    git clone https://github.com/huajar/neobrutalism-portfolio.git
    npm install
