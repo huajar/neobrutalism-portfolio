@@ -1,6 +1,6 @@
 "use client"
 
-import { NextIntlClientProvider } from 'next-intl'
+import dynamic from "next/dynamic";
 import { ReactNode, useState, useEffect } from 'react'
 
 type Props = {
@@ -39,6 +39,11 @@ export default function IntlProvider({ children }: Props) {
     }
   }, [])
 
+  const DynamicIntlProvider = dynamic(
+    () => import("next-intl").then(mod => mod.NextIntlClientProvider),
+    { ssr: false }
+  );
+
   if (!messages) {
     const defaultMessages = {
       navigation: {
@@ -68,15 +73,15 @@ export default function IntlProvider({ children }: Props) {
       }
     }
     return (
-      <NextIntlClientProvider locale={locale} messages={defaultMessages}>
+      <DynamicIntlProvider locale={locale} messages={defaultMessages}>
         {children}
-      </NextIntlClientProvider>
+      </DynamicIntlProvider>
     )
   }
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <DynamicIntlProvider locale={locale} messages={messages}>
       {children}
-    </NextIntlClientProvider>
+    </DynamicIntlProvider>
   )
 }
