@@ -27,7 +27,7 @@ export function Hero() {
                 loading="eager"
                 priority
               />
-              <div className="absolute -bottom-6 -right-6 bg-white dark:bg-[#000] border-4 border-black p-2 rotate-12 [box-shadow:4px_4px_0px_0px_#000]">
+              <div className="absolute -bottom-6 -right-6 bg-white border-4 border-black p-2 rotate-12 [box-shadow:4px_4px_0px_0px_#000]">
                 <span className="text-lg font-bold">{t("greeting")}</span>
               </div>
             </div>
@@ -36,11 +36,11 @@ export function Hero() {
             <div className="space-y-4">
               <Badge
                 variant="neutral"
-                className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4"
+                className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_0px_#000] border-black border-4"
               >
                 Rodrigo Huajamaita
               </Badge>
-              <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:4px_4px_0px_#000000]">
+              <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
                 {t("title")}
                 <br />
                 {t("subtitle")}

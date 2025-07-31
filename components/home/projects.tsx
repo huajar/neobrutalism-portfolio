@@ -74,10 +74,10 @@ export default function FeaturedProjects() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-4">
-            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
               {t("badge")}
             </Badge>
-            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
               {t("title")}
             </h2>
             <p className="md:text-lg font-base max-w-[600px]">
@@ -104,17 +104,17 @@ export default function FeaturedProjects() {
               />
               <CardContent className="p-4 sm:p-6 flex-grow">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-3">
-                  <h3 className="font-semibold text-xl sm:text-2xl mb-1 sm:mb-0 dark:text-white">
+                  <h3 className="font-semibold text-xl sm:text-2xl mb-1 sm:mb-0">
                     {project.title}
                   </h3>
                   {project.completedDate && (
-                    <div className="flex items-center font-base text-sm dark:text-gray-300">
+                    <div className="flex items-center font-base text-sm">
                       <Calendar className="h-4 w-4 mr-1" />
                       {project.completedDate}
                     </div>
                   )}
                 </div>
-                <p className="text-sm sm:text-base font-base mb-4 dark:text-gray-400">
+                <p className="text-sm sm:text-base font-base mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">

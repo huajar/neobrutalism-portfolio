@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import IntlProvider from "@/components/IntlProvider";
 import { publicSans } from "./fonts";
@@ -23,15 +22,9 @@ export default function RootLayout({
       <body className={`${publicSans.variable} antialiased bg-bg`}>
         <LocaleProvider>
           <IntlProvider>
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="light"
-              disableTransitionOnChange
-            >
               <Header />
               <main>{children}</main>
               <Footer />
-            </ThemeProvider>
           </IntlProvider>
         </LocaleProvider>
       </body>

@@ -81,7 +81,7 @@ export function Header() {
           ))}
         </div>
         <div className="hidden xl:flex gap-2 items-center justify-end">
-          <LanguageSwitcher className="bg-bw mr-5 dark:text-white" />
+          <LanguageSwitcher className="bg-bw mr-5" />
         </div>
         <div className="xl:hidden h-full ml-auto">
           <Sheet>

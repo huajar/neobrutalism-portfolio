@@ -80,10 +80,10 @@ export default function Experience() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-4">
-            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 dark:bg-bw [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
               {t("experience.badge")}
             </Badge>
-            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] dark:[text-shadow:6px_6px_0px_#000000]">
+            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
               {t("experience.title")}
             </h2>
             <p className="md:text-lg font-base max-w-[600px]">
