@@ -19,7 +19,7 @@ export function Hero() {
           <div className="flex items-center justify-center">
             <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rotate-3 bg-main border-8 border-black [box-shadow:12px_12px_0px_0px_#000]">
               <Image
-                src="/me.jpg"
+                src="/me.webp"
                 width={300}
                 height={300}
                 alt="Profile Image"
