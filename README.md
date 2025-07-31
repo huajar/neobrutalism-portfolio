@@ -34,6 +34,7 @@ Thinking of checking out this project directly on your computer? It's pretty str
    npm install
    npm run dev
    ```
+
 ## Acknowledgments
 
 * [Neobrutalism components](https://www.neobrutalism.dev/)
