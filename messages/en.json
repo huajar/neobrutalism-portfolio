@@ -47,10 +47,10 @@
   },
   "skills": {
     "Languages": "Languages",
-    "Architecture": "Architecture"
-    ,"badge": "Developing"
-    ,"title": "My Skills"
-    ,"description": "I am continuously expanding my understanding of these technologies, actively exploring new ones and building upon my foundational knowledge across various development domains."
+    "Architecture": "Architecture",
+    "badge": "Developing",
+    "title": "My Skills",
+    "description": "I am continuously expanding my understanding of these technologies, actively exploring new ones and building upon my foundational knowledge across various development domains."
   },
   "experience": {
     "badge": "My journey and",
@@ -64,17 +64,17 @@
         "period": "Jul 2024 - Apr 2025",
         "description": "Maintained and enhanced a legacy Django project, improving performance, security, and authentication workflows.",
         "achievements": {
-          "0": "Migrated user authentication from SQLite to PostgreSQL, improving security and scalability",
-          "1": "Implemented Django-Allauth for seamless third-party authentication integration"
+          "0": "Migrated the database from SQLite to PostgreSQL, improving security and scalability",
+          "1": "Implemented Django-Allauth for modern third-party authentication integration"
         }
       },
       "2": {
         "title": "Web Developer",
         "company": "Freelance",
         "period": "Jan 2024 - Dec 2024",
-        "description": "Gained practical experience working as a freelance web developer, creating tailored applications and websites for clients in diverse regions. Focused on delivering user-friendly solutions and ensuring effective client communication and support.",
+        "description": "Gained practical experience working as a freelance web developer, creating tailored applications and websites for clients. Focused on delivering user-friendly solutions and ensuring effective client communication and support.",
         "achievements": {
-          "0":"Successfully developed an e-commerce platform that generated €1,000 in annual revenue for a client, demonstrating direct business impact.",
+          "0": "Successfully developed an e-commerce platform that generated €1,000 in annual revenue for a client, demonstrating direct business impact.",
           "1": "Built functional websites to address clients' need for an online presence and enhance their digital reach.",
           "2": "Developed Next.js applications, gaining experience in modern web frameworks and basic performance considerations.",
           "3": "Provided direct client support and delivered minor feature updates, enhancing project functionality and client satisfaction."
@@ -92,8 +92,7 @@
       }
     }
   },
-  "footer":
-  {
+  "footer": {
     "contact": "Get in touch with me!",
     "builtWith": "Built with ❤️",
     "sourceCode": "Source code available on"

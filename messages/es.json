@@ -47,10 +47,10 @@
   },
   "skills": {
     "Languages": "Lenguajes",
-    "Architecture": "Arquitectura"
-    ,"badge": "Desarrollando"
-    ,"title": "Mis habilidades"
-    ,"description": "Estoy expandiendo continuamente mi comprensión de estas tecnologías, explorando activamente nuevas y construyendo sobre mi conocimiento fundamental en diversos dominios de desarrollo."
+    "Architecture": "Arquitectura",
+    "badge": "Desarrollando",
+    "title": "Mis habilidades",
+    "description": "Estoy expandiendo continuamente mi comprensión de estas tecnologías, explorando activamente nuevas y construyendo sobre mi conocimiento fundamental en diversos dominios de desarrollo."
   },
   "experience": {
     "badge": "Mi trayectoria y",
@@ -72,10 +72,10 @@
         "title": "Desarrollador Web",
         "company": "Freelance",
         "period": "Ene 2024 - Dic 2024",
-        "description": "Adquirí experiencia práctica trabajando como desarrollador web freelance, creando aplicaciones y sitios web personalizados para clientes de diversas regiones. Me enfoqué en entregar soluciones fáciles de usar y garantizar una comunicación y soporte efectivos con los clientes.",
+        "description": "Adquirí experiencia práctica trabajando como desarrollador web freelance, creando aplicaciones y sitios web personalizados para varios clientes. Me enfoqué en entregar soluciones fáciles de usar y garantizar una comunicación y soporte efectivos con los clientes.",
         "achievements": {
           "0": "Desarrollé exitosamente una plataforma de comercio electrónico que generó €1,000 de ingresos anuales para un cliente, demostrando impacto directo en el negocio.",
-          "1": "Construí sitios funcionales para abordar la necesidad de los clientes de tener presencia en línea y mejorar su alcance digital.",
+          "1": "Construí sitios funcionales para abordar la necesidad de los clientes de tener presencia en internet y mejorar su alcance digital.",
           "2": "Desarrollé aplicaciones de Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
           "3": "Proporcioné soporte directo al cliente y entregué actualizaciones menores de funcionalidades, mejorando la funcionalidad del proyecto y la satisfacción del cliente."
         }

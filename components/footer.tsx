@@ -14,12 +14,6 @@ export default function Footer() {
       <div className="flex flex-col items-center md:items-start gap-4">
         <p className="font-base">{t("contact")}</p>
         <div className="flex lg:justify-center lg:items-center space-x-4">
-          <Link href="https://github.com/huajar" target="_blank">
-            <Button size="icon" variant="noShadow" className="bg-white">
-              <Image src="/github.svg" width={24} height={24} alt="GitHub" />
-              <span className="sr-only">GitHub</span>
-            </Button>
-          </Link>
           <Link href="https://www.linkedin.com/in/rhuaja/" target="_blank">
             <Button size="icon" variant="noShadow" className="bg-white">
               <Image
