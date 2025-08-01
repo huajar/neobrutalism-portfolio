@@ -95,7 +95,7 @@ export default function Skills() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {skill.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="neutral">
+                    <Badge key={techIndex} variant="neutral" className={`${space_Grotesk.className}`}>
                       {tech}
                     </Badge>
                   ))}

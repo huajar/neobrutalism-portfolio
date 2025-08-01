@@ -124,7 +124,7 @@ export default function Experience() {
 
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.technologies.map((tech, i) => (
-                      <Badge key={i} variant="neutral" className="font-base border-4">
+                      <Badge key={i} variant="neutral" className={`font-base border-4 ${space_Grotesk.className}`}>
                         {tech}
                       </Badge>
                     ))}
