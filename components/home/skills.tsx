@@ -74,7 +74,7 @@ export default function Skills() {
           <h2 className={`text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
             {t("title")}
           </h2>
-          <p className="md:text-lg font-base max-w-[600px]">
+          <p className="text-base font-base max-w-[600px]">
             {t("description")}
           </p>
         </div>

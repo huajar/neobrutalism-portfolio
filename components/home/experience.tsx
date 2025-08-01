@@ -87,7 +87,7 @@ export default function Experience() {
             <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
               {t("experience.title")}
             </h2>
-            <p className="md:text-lg font-base max-w-[600px]">
+            <p className="text-base font-base max-w-[600px]">
               {t("experience.subtitle")}
             </p>
           </div>
@@ -100,11 +100,11 @@ export default function Experience() {
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
                       <CardTitle className={`text-2xl font-black ${space_Grotesk.className}`}>{exp.title}</CardTitle>
-                      <CardDescription className="text-base font-medium text-primary">
+                      <CardDescription className={`text-lg font-medium text-primary ${space_Grotesk.className}`}>
                         {exp.company}
                       </CardDescription>
                     </div>
-                    <div className="text-sm font-medium text-muted-foreground bg-muted mt-1 rounded-full w-fit">
+                    <div className={`text-sm font-medium text-muted-foreground bg-muted mt-1 rounded-full w-fit ${space_Grotesk.className}`}>
                       {exp.period}
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function Experience() {
                 <CardContent className="pt-4">
                   <p className="mb-4 font-base">{exp.description}</p>
                   <div className="mb-4">
-                    <p className="text-sm font-semibold mb-2">
+                    <p className="text-base font-semibold mb-2">
                       {t("experience.keyAchievements")}
                     </p>
                     <ul className="space-y-1 list-disc list-inside text-sm font-base text-muted-foreground">
