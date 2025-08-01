@@ -6,6 +6,7 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "../ui/badge";
+import { space_Grotesk } from "@/app/fonts";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -36,21 +37,21 @@ export function Hero() {
             <div className="space-y-4">
               <Badge
                 variant="neutral"
-                className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_0px_#000] border-black border-4"
+                className={`text-base justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ${space_Grotesk.className}`}
               >
                 Rodrigo Huajamaita
               </Badge>
-              <h1 className="text-5xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
+              <h1 className={`text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
                 {t("title")}
                 <br />
                 {t("subtitle")}
               </h1>
-              <p className="md:text-lg font-base max-w-[600px]">
+              <p className="font-base max-w-[600px]">
                 {t("description")}
               </p>
               <address className="flex items-center justify-center lg:justify-start gap-2">
-                <Globe className="h-4 w-4 mt-[1.5px]" />
-                <span className="font-semibold">Entre Ríos, Argentina</span>
+                <Globe className="h-4 w-4 mt-[2px]" />
+                <span className="font-base">Entre Ríos, Argentina</span>
               </address>
             </div>
             <div className="flex lg:justify-center lg:items-center space-x-4">
