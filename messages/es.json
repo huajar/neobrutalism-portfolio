@@ -26,17 +26,17 @@
     },
     "1": {
       "title": "Ediciones Lucentia",
-      "description": "Desarrollé un directorio público en línea diseñado para que un cliente administre y muestre de manera eficaz una red seleccionada de profesionales adventistas que ofrecen diversos servicios."
+      "description": "Desarrollé una web estática para una editorial, con el objetivo de exhibir de manera efectiva sus servicios. Este sitio se construyó para brindar una experiencia de usuario atractiva e informativa, posicionándose como la presencia digital clave para la comercialización y el contacto."
       ,"completedDate": "Octubre 2024"
     },
     "2": {
       "title": "Adventist On The Map",
-      "description": "Plataforma dedicada a conectar freelancers adventistas con clientes que buscan sus servicios, fomentando una comunidad confiable y capacitada."
+      "description": "Desarrollé un directorio público web. Diseñado para que un cliente administre y muestre de manera eficaz una red seleccionada de profesionales adventistas que ofrecen diversos servicios."
       ,"completedDate": "Agosto 2024"
     },
     "3": {
       "title": "Profeteia",
-      "description": "Desarrollé y personalicé un sitio web de e-commerce y blog personal para un cliente que vende productos virtuales. Mi trabajo se centró en configurar el sitio para una experiencia intuitiva y un sistema robusto para gestionar ventas y entrega de contenido."
+      "description": "Desarrollé y personalicé un sitio web de e-commerce y blog personal para un cliente que vende productos virtuales. Mi trabajo se centró en configurar el sitio para una experiencia intuitiva y un sistema para gestionar ventas y entrega de contenido."
       ,"completedDate": "Enero 2024"
     },
     "4": {
@@ -64,8 +64,8 @@
         "period": "Jul 2024 - Abr 2025",
         "description": "Mantuve y mejoré un proyecto legacy de Django, mejorando el rendimiento, la seguridad y los flujos de autenticación.",
         "achievements": {
-          "0": "Migré la autenticación de usuarios de SQLite a PostgreSQL, mejorando la seguridad y escalabilidad",
-          "1": "Implementé Django-Allauth para una integración perfecta de autenticación de terceros"
+          "0": "Migré la base de datos SQLite a PostgreSQL, mejorando la seguridad y escalabilidad",
+          "1": "Implementé Django-Allauth para una integración moderna con autenticación de terceros"
         }
       },
       "2": {
