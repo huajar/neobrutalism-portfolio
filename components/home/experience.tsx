@@ -97,7 +97,7 @@ export default function Experience() {
             <div key={exp.id}>
               <Card className="border-4">
                 <CardHeader className="pb-2">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
                     <div>
                       <CardTitle className={`text-2xl font-black ${space_Grotesk.className}`}>{exp.title}</CardTitle>
                       <CardDescription className={`text-lg font-medium text-primary ${space_Grotesk.className}`}>
@@ -112,10 +112,10 @@ export default function Experience() {
                 <CardContent className="pt-4">
                   <p className="mb-4 font-base">{exp.description}</p>
                   <div className="mb-4">
-                    <p className="text-base font-semibold mb-2">
+                    <p className="font-semibold mb-2">
                       {t("experience.keyAchievements")}
                     </p>
-                    <ul className="space-y-1 list-disc list-inside text-sm font-base text-muted-foreground">
+                    <ul className="space-y-1 list-disc list-inside font-base text-muted-foreground">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i}>{achievement}</li>
                       ))}
