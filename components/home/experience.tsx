@@ -1,5 +1,6 @@
 "use client";
 
+import { space_Grotesk } from "@/app/fonts";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -80,10 +81,10 @@ export default function Experience() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-4">
-            <Badge variant='neutral' className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_0px_#000] border-black border-4">
+            <Badge variant='neutral' className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ${space_Grotesk.className}`}>
               {t("experience.badge")}
             </Badge>
-            <h2 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
+            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
               {t("experience.title")}
             </h2>
             <p className="md:text-lg font-base max-w-[600px]">
@@ -98,7 +99,7 @@ export default function Experience() {
                 <CardHeader className="pb-2">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
-                      <CardTitle className="text-xl">{exp.title}</CardTitle>
+                      <CardTitle className={`text-2xl font-black ${space_Grotesk.className}`}>{exp.title}</CardTitle>
                       <CardDescription className="text-base font-medium text-primary">
                         {exp.company}
                       </CardDescription>

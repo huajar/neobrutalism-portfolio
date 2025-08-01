@@ -12,6 +12,7 @@ import {
 import { Button } from "../ui/button";
 
 import { useTranslations } from "@/hooks/useTranslations";
+import { space_Grotesk } from "@/app/fonts";
 
 export default function Skills() {
   const t = useTranslations("skills");
@@ -66,11 +67,11 @@ export default function Skills() {
         <div className="space-y-4">
           <Badge
             variant="neutral"
-            className="text-base font-medium justify-center items-center py-0 !pb-1 [box-shadow:4px_4px_0px_#000] border-black border-4"
+            className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_#000] border-black border-4 ${space_Grotesk.className}`}
           >
             {t("badge")}
           </Badge>
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]">
+          <h2 className={`text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
             {t("title")}
           </h2>
           <p className="md:text-lg font-base max-w-[600px]">
@@ -89,7 +90,7 @@ export default function Skills() {
                     className={`p-2 ${skill.color} cursor-default border-4`}
                   >
                     {skill.icon}
-                    <h3 className="font-semibold text-lg ">{skill.category}</h3>
+                    <h3 className={`font-semibold text-lg ${space_Grotesk.className}`}>{skill.category}</h3>
                   </Button>
                 </div>
                 <div className="flex flex-wrap gap-2">
