@@ -77,7 +77,7 @@ export default function FeaturedProjects() {
             <Badge variant='neutral' className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4`}>
               {t("badge")}
             </Badge>
-            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]}`}>
+            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]`}>
               {t("title")}
             </h2>
             <p className="text-base font-base max-w-[600px]">

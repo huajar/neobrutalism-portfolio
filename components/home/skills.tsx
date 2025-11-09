@@ -19,7 +19,7 @@ export default function Skills() {
     {
       category: "Frontend",
       icon: <Code2 className="h-5 w-5" />,
-      technologies: ["Next.js", "HTML", "CSS", "Tailwind CSS"],
+      technologies: ["Next.js", "Tailwind CSS"],
       color: "bg-blue-400",
     },
     {
@@ -37,13 +37,13 @@ export default function Skills() {
     {
       category: "DevOps",
       icon: <GitBranch className="h-5 w-5" />,
-      technologies: ["Docker", "Git", "Github Actions", "Gitlab CI/CD"],
+      technologies: ["Docker", "Git",  "Gitlab CI/CD"],
       color: "bg-purple-400",
     },
     {
       category: t("Languages"),
       icon: <Braces className="h-5 w-5" />,
-      technologies: ["JavaScript", "TypeScript", "Python"],
+      technologies: ["TypeScript", "Python"],
       color: "bg-red-400",
     },
     {

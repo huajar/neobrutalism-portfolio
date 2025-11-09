@@ -38,6 +38,10 @@ export function Hero() {
               >
                 Rodrigo Huajamaita
               </Badge>
+              <address className="flex items-center justify-center lg:justify-start gap-2">
+                <Globe className="h-4 w-4" />
+                <span className="font-base">Entre Ríos, Argentina</span>
+              </address>
               <h1 className={`text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]`}>
                 {t("title")}
                 <br />
@@ -46,10 +50,6 @@ export function Hero() {
               <p className="font-base max-w-[600px]">
                 {t("description")}
               </p>
-              <address className="flex items-center justify-center lg:justify-start gap-2">
-                <Globe className="h-4 w-4 mt-[2px]" />
-                <span className="font-base">Entre Ríos, Argentina</span>
-              </address>
             </div>
             <div className="flex lg:justify-center lg:items-center space-x-4">
               <Link href="https://github.com/huajar" target="_blank">
