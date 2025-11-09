@@ -13,56 +13,56 @@
     "greeting": "👋 ¡Hola!",
     "title": "Desarrollador",
     "subtitle": "Full Stack",
-    "description": "Estudiante de Ingeniería en Sistemas apasionado por construir soluciones web end-to-end. Me encanta experimentar con nuevas tecnologías y crecer constantemente como desarrollador."
+    "description": "Estudiante de Ingeniería en Sistemas con ganas de construir soluciones de software end-to-end. Me encanta experimentar con nuevas tecnologías y aprender de los pequeños detalles."
   },
   "projects": {
-    "badge": "Muestras de",
-    "title": "Mis Proyectos",
-    "description": "Explora una selección de mi trabajo, donde he adquirido experiencia práctica desarrollando y contribuyendo a soluciones web para clientes y organizaciones.",
+    "badge": "Algunos de mis",
+    "title": "Proyectos",
+    "description": "Explora mi trabajo, donde he adquirido experiencia práctica desarrollando y contribuyendo a soluciones web",
     "0": {
       "title": "Alkitab (versión antigua)",
-      "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación."
-      ,"completedDate": "Julio 2024"
+      "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación.",
+      "completedDate": "Julio 2024"
     },
     "1": {
       "title": "Ediciones Lucentia",
-      "description": "Desarrollé una web estática para una editorial, con el objetivo de exhibir de manera efectiva sus servicios. Este sitio se construyó para brindar una experiencia de usuario atractiva e informativa, posicionándose como la presencia digital clave para la comercialización y el contacto."
-      ,"completedDate": "Octubre 2024"
+      "description": "Desarrollé una web estática para una editorial, con el objetivo de exhibir de manera efectiva sus servicios. Este sitio se construyó para brindar una experiencia de usuario atractiva e informativa, posicionándose como la presencia digital clave para la comercialización y el contacto.",
+      "completedDate": "Octubre 2024"
     },
     "2": {
       "title": "Adventist On The Map",
-      "description": "Desarrollé un directorio público web. Diseñado para que un cliente administre y muestre de manera eficaz una red seleccionada de profesionales adventistas que ofrecen diversos servicios."
-      ,"completedDate": "Agosto 2024"
+      "description": "Desarrollé un directorio público web. Diseñado para que un cliente administre y muestre de manera eficaz una red seleccionada de profesionales adventistas que ofrecen diversos servicios.",
+      "completedDate": "Agosto 2024"
     },
     "3": {
       "title": "Profeteia",
-      "description": "Desarrollé y personalicé un sitio web de e-commerce y blog personal para un cliente que vende productos virtuales. Mi trabajo se centró en configurar el sitio para una experiencia intuitiva y un sistema para gestionar ventas y entrega de contenido."
-      ,"completedDate": "Enero 2024"
+      "description": "Desarrollé y personalicé un sitio web de e-commerce y blog personal para un cliente que vende productos virtuales. Mi trabajo se centró en configurar el sitio para una buena experiencia de usuario y de creacion de contenido, asegurando que el cliente pudiera gestionar eficazmente sus productos y publicaciones.",
+      "completedDate": "Enero 2024"
     },
     "4": {
       "title": "The Friends Language Club",
-      "description": "Mi primer proyecto de aplicación web, diseñado como una plataforma para conectar estudiantes de idiomas con hablantes nativos para práctica e intercambio cultural. Este proyecto me brindó experiencia práctica integral en principios de desarrollo web, desde la conceptualización y diseño hasta la implementación y resolución de problemas."
-      ,"completedDate": "Diciembre 2023"
+      "description": "Mi primer proyecto de aplicación web, diseñado como una plataforma para conectar estudiantes de idiomas con hablantes nativos para práctica e intercambio cultural. Este proyecto me brindó experiencia práctica integral en principios de desarrollo web, desde la conceptualización y diseño hasta la implementación y resolución de problemas.",
+      "completedDate": "Diciembre 2023"
     }
   },
   "skills": {
     "Languages": "Lenguajes",
     "Architecture": "Arquitectura",
-    "badge": "Desarrollando",
-    "title": "Mis habilidades",
+    "badge": "Construyendo con",
+    "title": "Habilidades",
     "description": "Estoy expandiendo continuamente mi comprensión de estas tecnologías, explorando activamente nuevas y construyendo sobre mi conocimiento fundamental en diversos dominios de desarrollo."
   },
   "experience": {
-    "badge": "Mi trayectoria y",
-    "title": "Mi Experiencia",
-    "subtitle": "Un resumen de mis contribuciones en diversos roles de TI, donde he aplicado mis conocimientos para crear soluciones funcionales y expandir mis competencias profesionales.",
+    "badge": "Mi tranqui",
+    "title": "Experiencia",
+    "subtitle": "Un resumen de mis contribuciones en roles de IT, donde he aplicado mis conocimientos para crear soluciones funcionales y expandir mis competencias profesionales.",
     "keyAchievements": "Contribuciones Clave:",
     "experiences": {
       "1": {
         "title": "Desarrollador Full Stack Jr.",
         "company": "Media Center Asia Central",
         "period": "Jul 2024 - Abr 2025",
-        "description": "Mantuve y mejoré un proyecto legacy de Django, mejorando el rendimiento, la seguridad y los flujos de autenticación.",
+        "description": "Mantuve un proyecto legacy de Django, mejorando la seguridad de lso datos y los flujos de autenticación.",
         "achievements": {
           "0": "Migré la base de datos SQLite a PostgreSQL, mejorando la seguridad y escalabilidad",
           "1": "Implementé Django-Allauth para una integración moderna con autenticación de terceros"
@@ -76,7 +76,7 @@
         "achievements": {
           "0": "Desarrollé exitosamente una plataforma de comercio electrónico que generó €1,000 de ingresos anuales para un cliente, demostrando impacto directo en el negocio.",
           "1": "Construí sitios funcionales para abordar la necesidad de los clientes de tener presencia en internet y mejorar su alcance digital.",
-          "2": "Desarrollé aplicaciones de Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
+          "2": "Desarrollé aplicaciones con Next.js, ganando experiencia en frameworks web modernos y consideraciones básicas de rendimiento.",
           "3": "Proporcioné soporte directo al cliente y entregué actualizaciones menores de funcionalidades, mejorando la funcionalidad del proyecto y la satisfacción del cliente."
         }
       },
@@ -84,9 +84,9 @@
         "title": "Desarrollador Web Voluntario",
         "company": "Hope Media Asia Central",
         "period": "Abr 2023 - Abr 2024",
-        "description": "Adquirí experiencia práctica contribuyendo al desarrollo de una aplicación web. Colaboré efectivamente con un equipo de desarrolladores y diseñadores para implementar nuevas funcionalidades y resolver errores, mejorando directamente la experiencia del usuario y el engagement. Este rol me proporcionó una valiosa exposición a flujos de trabajo de desarrollo del mundo real y prácticas colaborativas.",
+        "description": "Adquirí experiencia práctica contribuyendo al desarrollo de una aplicación web. Colaboré efectivamente con un equipo de compañeros de la carrera para implementar nuevas funcionalidades y resolver errores, mejorando directamente la experiencia del usuario y el engagement. Este rol me proporcionó una valiosa exposición a flujos de trabajo de desarrollo del mundo real y prácticas colaborativas.",
         "achievements": {
-          "0": "Colaboré dentro de un equipo de 3 desarrolladores en un proyecto de desarrollo web, participando en todas las fases de desarrollo de software, desde la recopilación de requisitos hasta la implementación.",
+          "0": "Colaboré dentro de un equipo de 3 eprsonas en un proyecto de desarrollo web, participando en todas las fases de desarrollo de software, desde la recopilación de requisitos hasta la implementación.",
           "1": "Apliqué habilidades centrales de front-end y back-end en un entorno de equipo colaborativo, adaptándome a los requisitos del proyecto y fomentando la comunicación efectiva."
         }
       }

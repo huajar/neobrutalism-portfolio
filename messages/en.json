@@ -11,14 +11,14 @@
   },
   "hero": {
     "greeting": "👋 Hello!",
-    "title": "Full Stack",
-    "subtitle": "Developer",
-    "description": "A Systems Engineering student passionate about building end-to-end web solutions. I love experimenting with new technologies and constantly growing as a developer."
+    "title": "Developer",
+    "subtitle": "Full Stack",
+    "description": "Systems Engineering student eager to build end-to-end software solutions. I love experimenting with new technologies and learning from the small details."
   },
   "projects": {
-    "badge": "Showcases of",
-    "title": "My Projects",
-    "description": "Explore a selection of my work, where I've gained practical experience developing and contributing to web solutions for clients and organizations.",
+    "badge": "Some of my",
+    "title": "Projects",
+    "description": "Explore my work, where I've gained practical experience developing and contributing to web solutions",
     "0": {
       "title": "Alkitab (old version)",
       "description": "The platform was designed to connect individuals in Kyrgyzstan with Christian resources. My responsibilities included implementing new features and ensuring the application's functionality and accessibility.",
@@ -36,7 +36,7 @@
     },
     "3": {
       "title": "Profeteia",
-      "description": "Developed and customized an e-commerce and personal blog website for a client selling virtual products. My work focused on configuring the site for intuitive user experience and a system to manage virtual product sales and content delivery.",
+      "description": "Developed and customized an e-commerce and personal blog website for a client selling virtual products. My work focused on setting up the site for a good user experience and content creation, ensuring the client could effectively manage their products and posts.",
       "completedDate": "January 2024"
     },
     "4": {
@@ -48,21 +48,21 @@
   "skills": {
     "Languages": "Languages",
     "Architecture": "Architecture",
-    "badge": "Developing",
-    "title": "My Skills",
+    "badge": "Building with",
+    "title": "Skills",
     "description": "I am continuously expanding my understanding of these technologies, actively exploring new ones and building upon my foundational knowledge across various development domains."
   },
   "experience": {
-    "badge": "My journey and",
-    "title": "My Experience",
-    "subtitle": "An overview of my contributions across diverse IT roles, where I've applied my knowledge to create functional solutions and expand my professional competencies.",
+    "badge": "My chill",
+    "title": "Experience",
+    "subtitle": "A summary of my contributions in IT roles, where I have applied my knowledge to create functional solutions and expand my professional competencies.",
     "keyAchievements": "Key Contributions:",
     "experiences": {
       "1": {
         "title": "Jr. Full Stack Developer",
         "company": "Media Center Asia Central",
         "period": "Jul 2024 - Apr 2025",
-        "description": "Maintained and enhanced a legacy Django project, improving performance, security, and authentication workflows.",
+        "description": "Maintained a legacy Django project, improving data security and authentication workflows.",
         "achievements": {
           "0": "Migrated the database from SQLite to PostgreSQL, improving security and scalability",
           "1": "Implemented Django-Allauth for modern third-party authentication integration"
@@ -72,10 +72,10 @@
         "title": "Web Developer",
         "company": "Freelance",
         "period": "Jan 2024 - Dec 2024",
-        "description": "Gained practical experience working as a freelance web developer, creating tailored applications and websites for clients. Focused on delivering user-friendly solutions and ensuring effective client communication and support.",
+        "description": "Gained practical experience working as a freelance web developer, creating custom applications and websites for various clients. Focused on delivering user-friendly solutions and ensuring effective communication and client support.",
         "achievements": {
           "0": "Successfully developed an e-commerce platform that generated €1,000 in annual revenue for a client, demonstrating direct business impact.",
-          "1": "Built functional websites to address clients' need for an online presence and enhance their digital reach.",
+          "1": "Built functional websites to address clients' need for online presence and enhance their digital reach.",
           "2": "Developed Next.js applications, gaining experience in modern web frameworks and basic performance considerations.",
           "3": "Provided direct client support and delivered minor feature updates, enhancing project functionality and client satisfaction."
         }
@@ -84,9 +84,9 @@
         "title": "Volunteer Web Developer",
         "company": "Hope Media Asia Central",
         "period": "Apr 2023 - Apr 2024",
-        "description": "Gained practical experience contributing to the development of a web application. Collaborated effectively with a team of developers and designers to implement new features and resolve bugs, directly enhancing user experience and engagement. This role provided valuable exposure to real-world development workflows and collaborative practices.",
+        "description": "Gained practical experience contributing to the development of a web application. Collaborated effectively with a team of peers from my program to implement new features and resolve bugs, directly enhancing user experience and engagement. This role provided me with valuable exposure to real-world development workflows and collaborative practices.",
         "achievements": {
-          "0": "Collaborated within a 3-developer team on a web application project, participating in all software development phases, from requirements gathering to implementation.",
+          "0": "Collaborated within a 3-person team on a web development project, participating in all software development phases, from requirements gathering to implementation.",
           "1": "Applied core front-end and back-end skills in a collaborative team environment, adapting to project requirements and fostering effective communication."
         }
       }

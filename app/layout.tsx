@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import IntlProvider from "@/components/IntlProvider";
-import { publicSans } from "./fonts";
+import { space_Grotesk } from "./fonts";
 import { Header } from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={`${publicSans.variable} antialiased bg-bg`}>
+      <body className={`${space_Grotesk.className} antialiased bg-bg`}>
         <LocaleProvider>
           <IntlProvider>
               <Header />
