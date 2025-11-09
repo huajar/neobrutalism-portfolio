@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useTranslations } from "@/hooks/useTranslations";
-import { space_Grotesk } from "@/app/fonts";
 
 export default function FeaturedProjects() {
   const t = useTranslations("projects");
@@ -75,10 +74,10 @@ export default function FeaturedProjects() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-4">
-            <Badge variant='neutral' className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ${space_Grotesk.className}`}>
+            <Badge variant='neutral' className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4`}>
               {t("badge")}
             </Badge>
-            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
+            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]}`}>
               {t("title")}
             </h2>
             <p className="text-base font-base max-w-[600px]">
@@ -105,11 +104,11 @@ export default function FeaturedProjects() {
               />
               <CardContent className="p-4 sm:p-6 flex-grow">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-3">
-                  <h3 className={`font-semibold text-xl sm:text-2xl mb-1 sm:mb-0 ${space_Grotesk.className}`}>
+                  <h3 className={`font-semibold text-xl sm:text-2xl mb-1 sm:mb-0`}>
                     {project.title}
                   </h3>
                   {project.completedDate && (
-                    <div className={`flex items-center font-base text-sm ${space_Grotesk.className}`}>
+                    <div className={`flex items-center font-base text-sm`}>
                       <Calendar className="h-4 w-4 mr-1" />
                       {project.completedDate}
                     </div>

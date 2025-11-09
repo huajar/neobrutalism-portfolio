@@ -6,7 +6,6 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "../ui/badge";
-import { space_Grotesk } from "@/app/fonts";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -14,9 +13,7 @@ export function Hero() {
   return (
     <section className="py-12 md:py-36" id="about">
       <div className="container mx-auto px-4 lg:pr-0 md:px-12">
-        {/* Changed to row on md breakpoint, with better spacing */}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-10 lg:gap-56">
-          {/* Portrait container */}
           <div className="flex items-center justify-center">
             <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rotate-3 bg-main border-8 border-black [box-shadow:12px_12px_0px_0px_#000]">
               <Image
@@ -37,11 +34,11 @@ export function Hero() {
             <div className="space-y-4">
               <Badge
                 variant="neutral"
-                className={`text-base justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4 ${space_Grotesk.className}`}
+                className={`text-base justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4`}
               >
                 Rodrigo Huajamaita
               </Badge>
-              <h1 className={`text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745] ${space_Grotesk.className}`}>
+              <h1 className={`text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]`}>
                 {t("title")}
                 <br />
                 {t("subtitle")}

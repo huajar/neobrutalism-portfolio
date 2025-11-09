@@ -16,7 +16,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { space_Grotesk } from "@/app/fonts";
 import { useTranslations } from "@/hooks/useTranslations";
 import Star10 from "./ui/star";
 
@@ -63,7 +62,7 @@ export function Header() {
       </Link>
       <div className="w-full h-16 border-border border-4 flex items-center bg-bw xl:grid xl:grid-cols-3">
         <h1
-          className={`[text-shadow:1.6px_1.6px_0px_#FD9745] stroke-b pl-5 ${space_Grotesk.className} text-4xl font-black tracking-tight lg:text-4xl`}
+          className={`[text-shadow:1.6px_1.6px_0px_#FD9745] stroke-b pl-5 text-4xl font-black tracking-tight lg:text-4xl`}
         >
           rodrigo
         </h1>
