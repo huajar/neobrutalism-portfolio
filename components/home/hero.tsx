@@ -40,7 +40,7 @@ export function Hero() {
               </Badge>
               <address className="flex items-center justify-center lg:justify-start gap-2">
                 <Globe className="h-4 w-4" />
-                <span className="font-base">Entre Ríos, Argentina</span>
+                <span className="font-base">CABA, Argentina</span>
               </address>
               <h1 className={`text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]`}>
                 {t("title")}
