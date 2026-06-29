@@ -1,12 +1,19 @@
-import { Space_Grotesk, DM_Sans } from 'next/font/google'
- 
+import { DM_Sans, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 
-export const publicSans = DM_Sans({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-export const space_Grotesk = Space_Grotesk({
+export const displayFont = DM_Sans({
   subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
+export const bodyFont = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+export const monoFont = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
   display: 'swap',
 })

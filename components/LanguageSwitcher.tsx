@@ -22,7 +22,7 @@ export function LanguageSwitcher({className}: {className?: string}) {
   return (
     <Button
       className={`h-10 w-auto px-3 ${className}`}
-      variant='reverse'
+      variant='ghost'
       onClick={toggleLanguage}
     >
       <Globe className="h-4 w-4 stroke-text mr-1" />

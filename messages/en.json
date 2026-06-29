@@ -6,19 +6,20 @@
     "experience": "Experience"
   },
   "header": {
-    "openToWork": "Open to work, let's connect!",
     "menu": "Menu"
   },
   "hero": {
-    "greeting": "👋 Hello!",
-    "title": "Developer",
-    "subtitle": "Full Stack",
-    "description": "Systems Engineering student eager to build end-to-end software solutions. I love experimenting with new technologies and learning from the small details."
+    "headline": "Rodrigo Huajamaita",
+    "tagline": "Full-stack developer · Systems Engineering student",
+    "description": "I build web apps with whatever solves the problem. I'm a Systems Engineering student and lately I've been getting more into infrastructure, networks, and cybersecurity.",
+    "location": "CABA, Argentina",
+    "status": "Open to work",
+    "projects_count": "5 shipped",
+    "years_active": "4 years of experience"
   },
   "projects": {
-    "badge": "Some of my",
     "title": "Projects",
-    "description": "Explore my work, where I've gained practical experience developing and contributing to web solutions",
+    "description": "Real products for real users — from WordPress to Next.js.",
     "0": {
       "title": "Alkitab (old version)",
       "description": "The platform was designed to connect individuals in Kyrgyzstan with Christian resources. My responsibilities included implementing new features and ensuring the application's functionality and accessibility.",
@@ -45,17 +46,10 @@
       "completedDate": "December 2023"
     }
   },
-  "skills": {
-    "Languages": "Languages",
-    "Architecture": "Architecture",
-    "badge": "Building with",
-    "title": "Skills",
-    "description": "I am continuously expanding my understanding of these technologies, actively exploring new ones and building upon my foundational knowledge across various development domains."
-  },
   "experience": {
-    "badge": "My chill",
-    "title": "Experience",
-    "subtitle": "A summary of my contributions in IT roles, where I have applied my knowledge to create functional solutions and expand my professional competencies.",
+    "title": "Journey",
+    "subtitle": "From 2023 to today — building, learning, shipping.",
+    "toolkit": "Toolkit",
     "keyAchievements": "Key Contributions:",
     "experiences": {
       "1": {

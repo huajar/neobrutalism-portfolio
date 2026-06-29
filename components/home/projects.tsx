@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Calendar } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -70,103 +70,69 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <div className="py-24 md:py-24 px-4 sm:px-6 lg:px-8" id="projects">
+    <div className="py-16 md:py-24 px-4 sm:px-6 lg:px-8" id="projects">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="space-y-4">
-            <Badge variant='neutral' className={`text-base font-medium justify-center items-center py-0 [box-shadow:4px_4px_0px_0px_#000] border-black border-4`}>
-              {t("badge")}
-            </Badge>
-            <h2 className={`text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl [text-shadow:2px_2px_0px_#FD9745]`}>
-              {t("title")}
-            </h2>
-            <p className="text-base font-base max-w-[600px]">
-              {t("description")}
-            </p>
-          </div>
+        <div className="mb-12">
+          <div className="w-10 h-0.5 bg-accent mb-4" />
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl tracking-tight text-text">
+            {t("title")}
+          </h2>
+          <p className="font-body text-sm sm:text-base text-textSecondary mt-2 max-w-[480px]">
+            {t("description")}
+          </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-2">
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden bg-bw flex border-4 flex-col"
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-                width={500}
-                height={300}
-                className="w-full h-full object-fit object-center border-black border-b-[4px]"
-              />
-              <CardContent className="p-4 sm:p-6 flex-grow">
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 sm:mb-3">
-                  <h3 className={`font-semibold text-xl sm:text-2xl mb-1 sm:mb-0`}>
-                    {project.title}
-                  </h3>
-                  {project.completedDate && (
-                    <div className={`flex items-center font-base text-sm`}>
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {project.completedDate}
-                    </div>
-                  )}
-                </div>
-                <p className="text-sm sm:text-base font-base mb-4">
+            <Card key={index} className="overflow-hidden flex flex-col">
+              <div className="relative">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-[110px] object-cover object-top border-b border-border"
+                />
+                {project.completedDate && (
+                  <div className="absolute bottom-1.5 right-1.5 bg-surface/80 px-1.5 py-0.5 font-mono text-xs" style={{ color: '#2A7D6C' }}>
+                    {project.completedDate}
+                  </div>
+                )}
+              </div>
+              <CardContent className="p-3 flex-grow flex flex-col gap-2">
+                <h3 className="font-display font-bold text-sm sm:text-base leading-tight text-text">
+                  {project.title}
+                </h3>
+                <p className="font-body text-sm text-textSecondary leading-relaxed line-clamp-2">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-auto">
+                <div className="flex flex-wrap gap-1.5 mt-auto">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge
-                      variant="neutral"
-                      key={techIndex}
-                      className="text-xs sm:text-sm"
-                    >
+                    <Badge variant="neutral" key={techIndex} className="font-mono text-xs">
                       {tech}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-4 sm:p-6 pt-0 flex flex-col sm:flex-row gap-3">
+              <CardFooter className="p-3 pt-0">
                 {(() => {
                   const link = project.deployLink || project.demoLink;
                   if (link) {
                     return (
-                      <Button
-                        size="sm"
-                        className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm border-4"
-                        asChild
-                      >
+                      <Button size="sm" className="w-full text-xs" asChild>
                         <Link
                           href={link}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Visit
+                          <ExternalLink className="h-3.5 w-3.5" />
+                          Visit site
                         </Link>
                       </Button>
                     );
                   }
                   return null;
                 })()}
-                {project.repoLink && (
-                  <Button
-                    size="sm"
-                    className="w-full sm:w-auto sm:flex-1 text-xs sm:text-sm border-4"
-                    asChild
-                  >
-                    <Link
-                      href={project.repoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Source Code
-                    </Link>
-                  </Button>
-                )}
               </CardFooter>
             </Card>
           ))}

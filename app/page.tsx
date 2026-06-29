@@ -1,16 +1,14 @@
-import Experience from "@/components/home/experience";
 import { Hero } from "@/components/home/hero";
 import Projects from "@/components/home/projects";
-import Skills from "@/components/home/skills";
+import Journey from "@/components/home/journey";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Portfolio() {
   return (
-    <MaxWidthWrapper className="mb-14 space-y-32">
+    <MaxWidthWrapper className="mb-14 space-y-16 md:space-y-24">
       <Hero />
-      <Experience />
-      <Skills />
       <Projects />
+      <Journey />
     </MaxWidthWrapper>
   );
 }

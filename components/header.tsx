@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetClose,
@@ -11,13 +11,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MaxWidthWrapperNavbar from "./MaxWidthWrapperNavbar";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslations } from "@/hooks/useTranslations";
-import Star10 from "./ui/star";
 
 export function Header() {
   const pathname = usePathname();
@@ -39,40 +38,18 @@ export function Header() {
   ];
 
   return (
-    <MaxWidthWrapperNavbar className="flex flex-col gap-3 sticky -top-12 z-50 mt-2">
-      <Link href="https://www.linkedin.com/in/rhuaja/" target="_blank">
-        <div className=" w-full h-10 bg-main FD9745] overflow-hidden p-0 cursor-pointer text-mtext border-4 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none inline-flex items-center justify-center whitespace-nowrap text-sm font-base ring-offset-white transition-all gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
-          <Star10
-            className="mb-7"
-            size={25}
-            color="#FD9745"
-            stroke="#000000"
-            strokeWidth={5}
-          />
-          <p className="max-sm:text-xs font-base">{t("header.openToWork")}</p>
-          <ArrowRight size="15" className="mt-1" />
-          <Star10
-            className="mt-4"
-            size={25}
-            color="#FD9745"
-            stroke="#000000"
-            strokeWidth={5}
-          />
-        </div>
-      </Link>
-      <div className="w-full h-16 border-border border-4 flex items-center bg-bw xl:grid xl:grid-cols-3">
-        <h1
-          className={`[text-shadow:1.6px_1.6px_0px_#FD9745] stroke-b pl-5 text-4xl font-black tracking-tight lg:text-4xl`}
-        >
+    <MaxWidthWrapperNavbar className="sticky top-0 z-50 mt-2">
+      <div className="w-full h-14 bg-surface border-b-2 border-border flex items-center xl:grid xl:grid-cols-3">
+        <h1 className="pl-5 text-2xl font-display font-extrabold tracking-tight text-text">
           rodrigo
         </h1>
-        <div className="hidden xl:flex gap-10 items-center justify-center h-full">
+        <div className="hidden xl:flex gap-8 items-center justify-center h-full">
           {array.map((item, index) => (
             <Link
               key={index}
               href={item.href}
               className={cn(
-                "flex items-center w-fit justify-center border-border max-sm:text-xs font-medium hover:underline"
+                "flex items-center w-fit justify-center max-sm:text-xs font-body font-medium text-textSecondary hover:text-text transition-colors"
               )}
             >
               {item.name}
@@ -80,14 +57,14 @@ export function Header() {
           ))}
         </div>
         <div className="hidden xl:flex gap-2 items-center justify-end">
-          <LanguageSwitcher className="bg-bw mr-5" />
+          <LanguageSwitcher className="bg-transparent text-text border border-border hover:bg-surface mr-5" />
         </div>
         <div className="xl:hidden h-full ml-auto">
           <Sheet>
             <SheetTrigger asChild>
               <Button
-                variant="noShadow"
-                className="h-full border-l-2 border-r-0 border-t-0 border-b-0 rounded-none bg-[#FD9745]"
+                variant="ghost"
+                className="h-full rounded-none"
               >
                 <Menu />
               </Button>
@@ -96,21 +73,14 @@ export function Header() {
               <SheetHeader>
                 <SheetTitle>{t("header.menu")}</SheetTitle>
               </SheetHeader>
-              <div className="grid mt-5 border-2 overflow-hidden border-border">
+              <div className="grid mt-5 border border-border overflow-hidden">
                 {array.map((item, index) => (
-                  <SheetClose asChild key={index} className="">
+                  <SheetClose asChild key={index}>
                     <Link
                       href={item.href}
                       className={cn(
-                        buttonVariants({
-                          variant: "noShadow",
-                          size: "default",
-                        }),
-                        "h-16 border-l-0 border-t-0 border-r-0 rounded-none",
-                        pathname === item.href
-                          ? "bg-[#FD9745] hover:bg-orange-300"
-                          : " bg-white hover:bg-orange-100",
-                        index !== array.length - 1 ? "border-b-2" : "border-b-0"
+                        "flex items-center h-14 px-4 font-body font-medium text-textSecondary hover:text-text hover:bg-accent/5 transition-colors border-l-0 border-t-0 border-r-0 border-b border-border",
+                        pathname === item.href ? "text-text bg-accent/5" : ""
                       )}
                     >
                       {item.name}
@@ -119,7 +89,7 @@ export function Header() {
                 ))}
               </div>
               <SheetFooter className="mt-5 gap-4 md:flex md:flex-col">
-                <LanguageSwitcher className="w-full bg-[#FD9745]" />
+                <LanguageSwitcher className="w-full bg-transparent text-text border border-border hover:bg-surface" />
               </SheetFooter>
             </SheetContent>
           </Sheet>

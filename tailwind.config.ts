@@ -10,34 +10,22 @@ export default {
 theme: {
   extend: {
     colors: {
-      main: 'var(--main)',
-      overlay: 'var(--overlay)',
-      bg: 'var(--bg)',
-      bw: 'var(--bw)',
-      blank: 'var(--blank)',
-      text: 'var(--text)',
-      mtext: 'var(--mtext)',
-      border: 'var(--border)',
-      ring: 'var(--ring)',
-      ringOffset: 'var(--ring-offset)',
-      
-      secondaryBlack: '#212121', 
+      bg: '#F5F0EB',
+      surface: '#FFFFFF',
+      text: '#1A1A1A',
+      textSecondary: '#6B6B6B',
+      accent: '#D65A4B',
+      accentLight: '#F5DFD8',
+      secondary: '#2A7D6C',
+      border: '#D4CCC4',
+    },
+    fontFamily: {
+      display: ['var(--font-display)'],
+      body: ['var(--font-body)'],
+      mono: ['var(--font-mono)'],
     },
     borderRadius: {
       base: '0px'
-    },
-    boxShadow: {
-      shadow: 'var(--shadow)'
-    },
-    translate: {
-      boxShadowX: '6px',
-      boxShadowY: '6px',
-      reverseBoxShadowX: '-6px',
-      reverseBoxShadowY: '-6px',
-    },
-    fontWeight: {
-      base: '600',
-      heading: '900',
     },
   },
 },

@@ -6,19 +6,20 @@
     "experience": "Experiencia"
   },
   "header": {
-    "openToWork": "Disponible para trabajar, ¡conectemos!",
     "menu": "Menú"
   },
   "hero": {
-    "greeting": "👋 ¡Hola!",
-    "title": "Desarrollador",
-    "subtitle": "Full Stack",
-    "description": "Estudiante de Ingeniería en Sistemas con ganas de construir soluciones de software end-to-end. Me encanta experimentar con nuevas tecnologías y aprender de los pequeños detalles."
+    "headline": "Rodrigo Huajamaita",
+    "tagline": "Full-stack developer · Estudiante de Ingeniería en Sistemas",
+    "description": "Desarrollo apps web con lo que resuelva el problema. Estudio Ingeniería en Sistemas y últimamente me estoy involucrando más con infra, redes y ciberseguridad.",
+    "location": "CABA, Argentina",
+    "status": "Disponible para trabajar",
+    "projects_count": "5 entregados",
+    "years_active": "4 años de experiencia"
   },
   "projects": {
-    "badge": "Algunos de mis",
     "title": "Proyectos",
-    "description": "Explora mi trabajo, donde he adquirido experiencia práctica desarrollando y contribuyendo a soluciones web",
+    "description": "Productos reales para usuarios reales — de WordPress a Next.js.",
     "0": {
       "title": "Alkitab (versión antigua)",
       "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación.",
@@ -45,17 +46,10 @@
       "completedDate": "Diciembre 2023"
     }
   },
-  "skills": {
-    "Languages": "Lenguajes",
-    "Architecture": "Arquitectura",
-    "badge": "Construyendo con",
-    "title": "Habilidades",
-    "description": "Estoy expandiendo continuamente mi comprensión de estas tecnologías, explorando activamente nuevas y construyendo sobre mi conocimiento fundamental en diversos dominios de desarrollo."
-  },
   "experience": {
-    "badge": "Mi tranqui",
-    "title": "Experiencia",
-    "subtitle": "Un resumen de mis contribuciones en roles de IT, donde he aplicado mis conocimientos para crear soluciones funcionales y expandir mis competencias profesionales.",
+    "title": "Recorrido",
+    "subtitle": "De 2023 a hoy — construyendo, aprendiendo, entregando.",
+    "toolkit": "Toolkit",
     "keyAchievements": "Contribuciones Clave:",
     "experiences": {
       "1": {
