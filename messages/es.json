@@ -14,12 +14,11 @@
     "description": "Desarrollo apps web con lo que resuelva el problema. Estudio Ingeniería en Sistemas y últimamente me estoy involucrando más con infra, redes y ciberseguridad.",
     "location": "CABA, Argentina",
     "status": "Disponible para trabajar",
-    "projects_count": "5 entregados",
-    "years_active": "4 años de experiencia"
+    "years_active": "3 años de experiencia"
   },
   "projects": {
     "title": "Proyectos",
-    "description": "Productos reales para usuarios reales — de WordPress a Next.js.",
+    "description": "Productos reales para usuarios reales — construido con Next.js, Django y WordPress.",
     "0": {
       "title": "Alkitab (versión antigua)",
       "description": "La plataforma fue diseñada para conectar personas en Kirguistán con recursos cristianos. Mis responsabilidades incluyeron implementar nuevas funcionalidades y asegurar la accesibilidad y el correcto funcionamiento de la aplicación.",

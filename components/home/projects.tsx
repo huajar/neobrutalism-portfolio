@@ -1,7 +1,6 @@
 "use client"
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -91,16 +90,16 @@ export default function FeaturedProjects() {
                   alt={project.title}
                   width={500}
                   height={300}
-                  className="w-full h-[110px] object-cover object-top border-b border-border"
+                  className="w-full h-40 object-cover object-top border-b border-border"
                 />
                 {project.completedDate && (
-                  <div className="absolute bottom-1.5 right-1.5 bg-surface/80 px-1.5 py-0.5 font-mono text-xs" style={{ color: '#2A7D6C' }}>
+                  <div className="absolute bottom-1.5 right-1.5 bg-surface/80 px-1.5 py-0.5 font-mono text-xs text-secondary">
                     {project.completedDate}
                   </div>
                 )}
               </div>
-              <CardContent className="p-3 flex-grow flex flex-col gap-2">
-                <h3 className="font-display font-bold text-sm sm:text-base leading-tight text-text">
+              <CardContent className="flex-grow flex flex-col gap-2 pt-3">
+                <h3 className="font-display font-extrabold text-lg sm:text-xl leading-tight text-text">
                   {project.title}
                 </h3>
                 <p className="font-body text-sm text-textSecondary leading-relaxed line-clamp-2">
@@ -108,27 +107,26 @@ export default function FeaturedProjects() {
                 </p>
                 <div className="flex flex-wrap gap-1.5 mt-auto">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge variant="neutral" key={techIndex} className="font-mono text-xs">
+                    <Badge key={techIndex} className="font-mono text-xs">
                       {tech}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-3 pt-0">
+              <CardFooter>
                 {(() => {
                   const link = project.deployLink || project.demoLink;
                   if (link) {
                     return (
-                      <Button size="sm" className="w-full text-xs" asChild>
-                        <Link
-                          href={link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-3.5 w-3.5" />
-                          Visit site
-                        </Link>
-                      </Button>
+                      <Link
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 font-body text-sm font-medium text-secondary hover:text-secondary/70 transition-colors"
+                      >
+                        Visit site
+                        <ExternalLink className="h-3.5 w-3.5" />
+                      </Link>
                     );
                   }
                   return null;

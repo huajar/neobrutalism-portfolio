@@ -15,11 +15,11 @@
     "location": "CABA, Argentina",
     "status": "Open to work",
     "projects_count": "5 shipped",
-    "years_active": "4 years of experience"
+    "years_active": "3 years of experience"
   },
   "projects": {
     "title": "Projects",
-    "description": "Real products for real users — from WordPress to Next.js.",
+    "description": "Real products for real users — built with Next.js, Django and WordPress.",
     "0": {
       "title": "Alkitab (old version)",
       "description": "The platform was designed to connect individuals in Kyrgyzstan with Christian resources. My responsibilities included implementing new features and ensuring the application's functionality and accessibility.",

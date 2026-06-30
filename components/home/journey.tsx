@@ -95,16 +95,16 @@ export default function Journey() {
         <div className="max-w-2xl mx-auto space-y-6">
           {experiences.map((exp) => (
             <div key={exp.id}>
-              <p className="font-mono text-xs mb-1.5" style={{ color: '#2A7D6C' }}>{exp.period}</p>
-              <Card>
+              <p className="font-mono text-xs mb-1.5 text-secondary">{exp.period}</p>
+              <Card className="border-l-2 border-l-accent">
                 <CardHeader className="pb-2">
                   <div>
                     <CardTitle className="text-lg sm:text-xl font-display font-extrabold">
                       {exp.title}
                     </CardTitle>
-                    <CardDescription className="text-xs text-textSecondary font-medium">
-                      {exp.company}
-                    </CardDescription>
+<CardDescription className="text-xs text-secondary font-medium">
+                  {exp.company}
+                </CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -118,7 +118,7 @@ export default function Journey() {
                   </ul>
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {exp.technologies.map((tech, i) => (
-                      <Badge key={i} variant="neutral" className="font-mono text-xs">
+                      <Badge key={i} className="font-mono text-xs">
                         {tech}
                       </Badge>
                     ))}
@@ -137,7 +137,7 @@ export default function Journey() {
           </div>
           <div className="flex flex-wrap gap-2">
             {allTechnologies.map((tech, i) => (
-              <Badge key={i} variant="neutral" className="font-mono text-xs">
+              <Badge key={i} className="font-mono text-xs">
                 {tech}
               </Badge>
             ))}
