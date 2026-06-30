@@ -13,12 +13,21 @@ function NetworkDiagram() {
       <line x1="90" y1="110" x2="155" y2="70" stroke="#D4CCC4" strokeWidth="1" />
       <line x1="90" y1="110" x2="120" y2="190" stroke="#D4CCC4" strokeWidth="1" />
 
-      <circle cx="90" cy="110" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-      <circle cx="25" cy="110" r="5" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-      <circle cx="155" cy="70" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-
-      <circle cx="55" cy="35" r="10" fill="#D65A4B" />
-      <circle cx="120" cy="190" r="7" fill="#2A7D6C" />
+      <g>
+        <circle cx="90" cy="110" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
+      </g>
+      <g>
+        <circle cx="25" cy="110" r="5" fill="none" stroke="#D4CCC4" strokeWidth="1" />
+      </g>
+      <g>
+        <circle cx="155" cy="70" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
+      </g>
+      <g>
+        <circle cx="55" cy="35" r="10" fill="#D65A4B" />
+      </g>
+      <g>
+        <circle cx="120" cy="190" r="7" fill="#2A7D6C" />
+      </g>
     </svg>
   );
 }
@@ -67,7 +76,7 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:flex flex-1 items-center justify-center">
+          <div className="flex flex-1 items-center justify-center">
             <NetworkDiagram />
           </div>
         </div>
