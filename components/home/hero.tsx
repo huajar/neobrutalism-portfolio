@@ -2,33 +2,21 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "@/hooks/useTranslations";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 import { Button } from "@/components/ui/button";
 
 function NetworkDiagram() {
   return (
-    <svg viewBox="0 0 180 220" aria-hidden="true" className="w-[160px] md:w-[200px] lg:w-[180px] xl:w-[220px] h-auto">
-      <line x1="90" y1="110" x2="55" y2="35" stroke="#D4CCC4" strokeWidth="1" />
-      <line x1="90" y1="110" x2="25" y2="110" stroke="#D4CCC4" strokeWidth="1" />
-      <line x1="90" y1="110" x2="155" y2="70" stroke="#D4CCC4" strokeWidth="1" />
-      <line x1="90" y1="110" x2="120" y2="190" stroke="#D4CCC4" strokeWidth="1" />
-
-      <g>
-        <circle cx="90" cy="110" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-      </g>
-      <g>
-        <circle cx="25" cy="110" r="5" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-      </g>
-      <g>
-        <circle cx="155" cy="70" r="6" fill="none" stroke="#D4CCC4" strokeWidth="1" />
-      </g>
-      <g>
-        <circle cx="55" cy="35" r="10" fill="#D65A4B" />
-      </g>
-      <g>
-        <circle cx="120" cy="190" r="7" fill="#2A7D6C" />
-      </g>
-    </svg>
+    <div className="w-[360px] sm:w-[340px] md:w-[380px] lg:w-[400px] xl:w-[500px]">
+      <DotLottieReact
+        src="/animations/Chemistry.lottie"
+        autoplay
+        loop
+        renderConfig={{ autoResize: true }}
+        className="w-full"
+      />
+    </div>
   );
 }
 
@@ -38,7 +26,7 @@ export function Hero() {
   return (
     <section className="py-16 md:py-28" id="about">
       <div className="container mx-auto px-4 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-24 lg:gap-16">
           <div className="flex-1 max-w-2xl space-y-5">
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.06] tracking-tight text-text">
               {t("headline")}
